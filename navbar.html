@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Navbar 
+        </title>
+    </head>
+    <body>
+
+        <style>
+            * {
+                box-sizing: border-box
+            }
+            html, body { 
+                margin : 0; 
+                height: 100% 
+            }
+            .nav { 
+                display:flex;
+                background-color: #323232
+            }
+            .nav-item:hover{
+                background-color: #afa7bb;
+                cursor: pointer;
+            }
+            .nav-item {
+                padding: 1rem;
+                float: left;
+                height: 100%;
+                font-size: 1.2rem;
+                color: white;
+                margin: 0rem 0.5rem 0rem 0.5rem
+           }
+            .nav-item-selected {
+                background-color: #a898c2
+            }
+            .content {
+                margin: 0;
+                background-color: #e0f1f1;
+                border-top: 0.3rem solid #af0069;
+                height: 100%;
+                width: 100%;
+                padding: 1rem;
+                clear: left;
+            }
+        </style>
+        
+        <nav class="nav">
+            <div class="nav-item nav-item-selected">Home</div>
+            <div class ="nav-item">Bill Payments</div>
+            <div class="nav-item">Grossary</div>
+            <div class="nav-item">Electronics</div>
+        </nav>
+        <div class="content">
+            <h1>home</h1>
+        </div>
+        <div class="content">
+            <h1>bill payments</h1>
+        </div>
+        <div class="content">
+            <h1>electronics</h1>
+        </div>
+    </body>
+</html>
