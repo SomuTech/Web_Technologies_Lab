@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Time Table</title>
+
+        <style>
+        body {
+            margin-top: 30px;
+            margin-right: 200px;
+            margin-left: 200px;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+        }
+        h2,h4,h3 {
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode";
+            margin-top: -15px;
+        }
+        .heads {
+            text-align: center;
+            margin-top: -100px;
+        }
+        img {
+            margin-left: 110px;
+        }
+        th {
+            border: 1px solid black;
+            text-align: center;
+            height: 45px;
+            width: 200px;
+            background-color: silver;
+        }
+        td {
+            border: 1px solid black;
+            text-align: center;
+            height: 5px;
+            width: 450px;
+            padding: 5px;
+        }
+        #table1{
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #inline{
+          display: inline-block;
+        }
+        #table2 {
+            border-collapse: collapse;
+            height: 15px;
+            width: 1000px;
+            padding: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #he1{
+          font-size: 22px;
+          font-weight: bold;
+
+        }
+        #he2{
+          font-size: 22px;
+          font-weight: bold;
+          text-align: right;
+          margin-top: -53px;
+        }
+        #p1{
+          text-align: center;
+          font-weight: bold;
+          margin-top: -50px;
+        }
+        #p2{
+          text-align: right;
+          font-weight: bold;
+          margin-top: -50px;
+        }
+
+        </style>
+    </head>
+    <body>
+    <img src="svec-main-logo.png" width="170" height="120" />
+    <div class="heads">
+      <h2>SREE VIDYANIKETHAN ENGINNERING COLLEGE</h2>
+      <h2>(AUTONOMOUS)</h2>
+      <h4>Sree Sainath Nagar, Tirupati - 517102</h4>
+      <p><u><b>DEPARTMENT OF COMPUTER SCIENCE AND SYSTEMS ENGINEERING</b></u><br>
+      <b><u>CLASS WORK TIME TABLE</u> (2021-2022)</b><br>
+      <h3><b>III B.Tech I Semester (Section-B)</b></h3>
+      </p>
+    </div>
+    <div>
+      <p id="he1">ROOM NO:711</p>
+      <p id="he2">W.E.F:01-09-2021</p>
+    </div>
+    <center>
+      <table id="table1">
+        <tr>
+          <th>DAY/HR</th>
+          <th>09.00 AM <br />TO<br />10.00 AM</th>
+          <th>10.00 AM <br />TO<br />11.00 AM </th>
+          <th rowspan="6"><b>b<br />r<br />e<br />a<br />k</b></th>
+          <th>11.30 AM <br />TO<br />12.30 PM</th>
+          <th>12.30 PM <br />TO<br />01.30 PM</th>
+          <th rowspan="6">
+            <b>L<br />u<br />n<br />c<br />h<br /><br />b<br />r<br />e<br />a<br />k</b></th>
+          <th>02.45 PM <br />TO<br />03.45 PM</th>
+          <th>03.45 PM <br />TO<br />04.45 PM</th>
+        </tr>
+        <tr>
+          <th>MON</th>
+          <td>WT</td>
+          <td>AI</td>
+          <td>IOT</td>
+          <td>CN</td>
+          <td>UHV</td>
+          <td>MC/ST</td>
+        </tr>
+        <tr>
+          <th>TUE</th>
+          <td>MC/ST</td>
+          <td>AI</td>
+          <td>CN</td>
+          <td>OE</td>
+          <td colspan="2">WT LAB</td>
+        </tr>
+        <tr>
+          <th>WED</th>
+          <td>IOT</td>
+          <td>CN</td>
+          <td>WT</td>
+          <td>OE</td>
+          <td>MC/ST</td>
+          <td>AI</td>
+        </tr>
+        <tr>
+          <th>THU</th>
+          <td colspan="2">CN LAB</td>
+          <td>WT</td>
+          <td>OE</td>
+          <td>AI</td>
+          <td>IOT</td>
+        </tr>
+        <tr>
+          <th>FRI</th>
+          <td>AI</td>
+          <td>CN</td>
+          <td>MC/ST</td>
+          <td>WT</td>
+          <td>IOT</td>
+          <td>UHV</td>
+        </tr>
+      </table>
+      <br />
+      <br />
+        <table id="table2">
+          <tr>
+            <td colspan="2"></td>
+            <td lass="th2"><b>SUBJECT CODE</b></td>
+            <td class="th2"><b>SUBJECT NAME</b></td>
+            <td class="th2"><b>FACULTY NAME</b></td>
+          </tr>
+          <tr>
+            <td colspan="2"> <b>AI</b> </td>
+            <td>19BT50502</td>
+            <td>Artificial Intelligence</td>
+            <td>Dr. C. Anitha</td>
+          </tr>
+          <tr>
+            <td colspan="2"><b>WT</b></td>
+            <td>19BT51202</td>
+            <td>Web Technologies</td>
+            <td>Mr. P.Yogendra Prasad</td>
+          </tr>
+          <tr>
+            <td rowspan="2"><b>PE-1</b></td>
+            <td>MC</td>
+            <td>191BT40501</td>
+            <td>Computer Networks</td>
+            <td>Dr. C. Madhusudhana Rao</td>
+          </tr>
+          <tr>
+            <td>ST</td>
+            <td>19BT51501</td>
+            <td>Modern Cryptography</td>
+            <td>Dr. C. Siva Kumar</td>
+          </tr>
+          <tr>
+            <td colspan="5" style="text-align: left"><b>OE-1</b></td>
+          </tr>
+          <tr>
+            <td colspan="2"><b>IOT </b>(IDE-1)</td>
+            <td>19BT51208</td>
+            <td>IoT Architecture and Protocols</td>
+            <td>Ms. S. Anbu Lakshmi</td>
+          </tr>
+          <tr>
+            <td colspan="2"><b>CN LAB</b></td>
+            <td>19BT40531</td>
+            <td>Computer Networks Lab</td>
+            <td>Dr. C. Madhusudhana Rao</td>
+          </tr>
+          <tr>
+            <td colspan="2"><b>WT LAB</b></td>
+            <td>19BT51232</td>
+            <td>Web Technologies Lab</td>
+            <td>Mr. P.Yogendra Prasad</td>
+          </tr>
+          <tr>
+            <td colspan="2"><b>UHV</b></td>
+            <td>19BT5MC01</td>
+            <td>Universal Human Values</td>
+            <td>Dr. C. Siva Kumar</td>
+          </tr>
+        </table>
+        <br>
+        <br>
+        <br><br>
+       <div>
+         <p style="text-align:left; font-weight:bold;">TT COORDINATOR</p>
+         <P id="p1">HOD</P>
+         <P id="p2">PRINCIPAL</P>
+        </div>
+    </center>
+  </body>
+</html>
