@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Canvas</title>
+        <style>
+            #canvas1, #canvas2,#canvas3{
+                border: 5px solid silver;
+                margin-left: 50px;
+                margin-top: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="canvas1" width="300" height="300"></canvas>
+        <canvas id="canvas2" width="300" height="300"></canvas>
+        <canvas id="canvas3" width="300" height="300"></canvas>
+        <script>
+            var can=document.getElementById("canvas1");
+            var c=can.getContext("2d");
+            c.moveTo(0,0);
+            c.lineTo(300,300);
+            c.stroke();
+            //
+            var can=document.getElementById("canvas2");
+            var c=can.getContext("2d");
+            c.beginPath();
+            c.arc(150,150,60,0,2*Math.PI);
+            c.stroke();
+            //
+            var can=document.getElementById("canvas3");
+            var c=can.getContext("2d");
+            c.font="20px arial"
+            c.fillText("SomuTech",90,150);
+        </script>
+    </body>
+</html>
