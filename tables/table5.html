@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table 5</title>
+        <style>
+            body{
+                background-color:#063554;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin: 20px 100px 100px 100px;
+            }
+            th{
+                padding-right: 100px;
+                border: 0px solid red;
+                color: rgb(213, 212, 212);
+            }
+            td{
+                padding-left: 35px;
+                border: 0px solid red;
+            }
+            #spec{
+                padding: 35px;
+                margin-top: -50;
+                font-size:20px;
+                color: rgb(250, 247, 247);
+            }
+            tr:nth-child(even)
+            {
+                background-color: #082132;
+            }
+            tr{
+                height: 80px;
+            }
+            #td1{color: rgb(69, 69, 189);}
+            #td2{color:rgb(223, 219, 219);}
+            #td3{color:rgb(122, 194, 118);}
+            #td4{color:yellow;}
+            #td5{color:white}
+            #btn-1{
+                background-color: #0909d6;
+                color: white;
+                border-radius: 8px;
+            }
+            #btn-2{
+                background-color: red;
+                color: white;
+                border-radius: 8px;
+            }
+            #btn-3{
+                background-color: green;
+                color: white;
+                padding: 10px;
+                width: 130px;
+                border-radius: 10px;
+                font-size:20px;
+            }
+            table{
+                width: 100%;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="color: white;">Product - Management</h1>
+        <table>
+            <td style="background-color: #0d4062; padding:50px;">
+            <table style="margin-top: -50px;">
+            <tr>
+                <td id="spec">List of Products<br><br><input type="button" id="btn-3" value="Create">
+            </tr>
+            <!-- <tr>
+                 <td style="margin-right:0px"> <input type="search" value=""></td>
+            </tr> -->
+                <tr>
+                    <th>ID</th>
+                    <th>IMAGE</th>
+                    <th>TITLE</th>
+                    <th>SUBTITLE</th>
+                    <th>PRICE(S)</th>
+                    <th>RATING</th>
+                    <th>API</th>
+                </tr>
+                <tr>
+                    <td id="td5">1</td>
+                    <td id="img"><img src="t6.jfif" width="85px" height="=85px"></td>
+                    <td id="td1">Trainers</td>
+                    <td id="td2">Trainers in White</td>
+                    <td id="td3">76</td>
+                    <td id="td4">4.6</td>
+                    <td><input type="button" value="Edit" id="btn-1"> <input type="button" value="Delete" id="btn-2"></td>
+                </tr>
+                <tr>
+                    <td id="td5">2</td>
+                    <td id="img"><img src="t61.jfif" width="85px" height="85px"></td>
+                    <td id="td1">Trainers</td>
+                    <td id="td2">Trainers in White</td>
+                    <td id="td3">76</td>
+                    <td id="td4">4.6</td>
+                    <td><input type="button" value="Edit" id="btn-1"> <input type="button" value="Delete" id="btn-2"></td>
+                </tr>
+                <tr>
+                    <td id="td5">3</td>
+                    <td id="img"><img src="t6.jfif" width="85px" height="=85px"></td>
+                    <td id="td1">Boots</td>
+                    <td id="td2">Trainers in White</td>
+                    <td id="td3">76</td>
+                    <td id="td4">4.6</td>
+                    <td><input type="button" value="Edit" id="btn-1"> <input type="button" value="Delete" id="btn-2"></td>
+                </tr>
+                <tr>
+                    <td id="td5">4</td>
+                    <td id="img"><img src="t61.jfif" width="85px" height="85px"></td>
+                    <td id="td1">Flat sandals</td>
+                    <td id="td2">Trainers in White</td>
+                    <td id="td3">76</td>
+                    <td id="td4">4.6</td>
+                    <td><input type="button" value="Edit" id="btn-1"> <input type="button" value="Delete" id="btn-2"></td>
+                </tr>
+                <tr>
+                    <td id="td5">5</td>
+                    <td id="img"><img src="t61.jfif" width="85px" height="85px"></td>
+                    <td id="td1">Boots</td>
+                    <td id="td2">Trainers in White</td>
+                    <td id="td3">76</td>
+                    <td id="td4">4.6</td>
+                    <td><input type="button" value="Edit" id="btn-1"> <input type="button" value="Delete" id="btn-2"></td>
+                </tr>
+                <tr>
+                    <td id="td5">6</td>
+                    <td id="img"><img src="t6.jfif" width="85px" height="=85px"></td>
+                    <td id="td1">Trainers</td>
+                    <td id="td2">Trainers in White</td>
+                    <td id="td3">76</td>
+                    <td id="td4">4.6</td>
+                    <td><input type="button" value="Edit" id="btn-1"> <input type="button" value="Delete" id="btn-2"></td>
+                </tr>
+            </table>
+        </td>
+        </table>
+    </body>
+</html>
