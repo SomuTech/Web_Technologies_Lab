@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Web Technologies" />
+        <meta name="keywords" content="HTML, css,Tags,front end " />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0 shrink-to-fit=no" />
+        <title>SVEC HOME</title>
+        <style>
+            .nav { 
+                display:flex;
+               background-color: #27334F;
+            }
+            .nav-item:hover{
+                background-color: #ec3f3f;
+                cursor: pointer;
+            }
+            .nav-item-selected {
+                background-color: #ec3f3f;
+            }
+            .nav-item {
+                padding: 0.7rem;
+                height: 100%;
+                font-size: 1rem;    
+                color: white;
+                font-family: roboto,arial,sans-serif;
+           }
+           .head-nav{
+                padding: 10px;
+                border:1px solid black;
+                background-color: #ED2D5A;
+                width:680px;
+                margin-left: -1.5px;
+                margin-top: -4px;
+                color: white;
+           }
+           .head-nav-2{
+            padding: 10px;
+            border:1px solid black;
+            background-color: #ED2D5A;
+            color: white;
+           }
+           li:hover{
+                color: rgb(243, 56, 56);
+                cursor: pointer;
+           }
+           .links{
+               display:flex;
+               margin-left: 665px;
+           }
+           .logo-links{
+            text-align:right;
+            margin-right: 150px;
+             margin-top: -125px;
+        }
+           #line{
+               font-size: 25px;
+               font-weight: bold;
+               color: red;
+           }
+           #line1{
+               font-size: 40px;
+               margin-top: -5px;
+               color:#ec3f3f;
+           }
+           .link-item{
+               text-align: right;
+           }
+           .link-item:hover{
+            background-color: #e96868;
+            cursor: pointer;
+           }
+           .msg{
+               padding: 15px;
+               margin-top: 5px;
+               margin-left: 150px;
+               margin-right: 150px;
+           }
+           #msg-id{
+               color:#27334F;
+               text-align: justify;
+               font-family: sans-serif;
+               font-size: 16px;
+           }
+           .left-art{
+               padding: 5px;
+               height: 600px;
+               width: 400px;
+               border: 1px solid red;
+           }
+           .notifications, .events{
+            border:1px solid red;
+            width:700px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #337AB7;
+           }
+           #msg-id:hover{
+               background-color: #27334F;
+               color:white;
+           }
+           .notifications{
+               height:700px;
+               float: right;
+               margin-top: -1242px;
+           }
+           .events{
+            height:500px;
+            float:right;
+            margin-top: -520px;
+        }
+        li{
+            padding: 8px;
+        }
+        .news,.achievements,.eminent{
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+        .news-img,achie-img,eminent-img{
+            flex-direction: row;
+            padding: 5px;
+        }
+        #news-img{
+            padding: 5px;
+            width:385px;
+            height:250px;
+        }
+        #achie-img,#eminent-img{
+            padding: 5px;
+            width:280px;
+            height: 220px;
+        }
+        .footer{
+            background-color: #27334F; 
+            color:white;  
+            font-family: Arial, Helvetica, sans-serif; 
+            padding:5px;
+            height:500px;
+        }
+        .foot-left{
+            width: 65%;
+            margin-left: 150px;
+        }
+        .foot-right{
+            width:30%;
+            margin-left: 70%;
+            margin-right: 50px;
+            margin-top: -82px;
+        }
+           .foot{
+               float: left;
+               font-size: 15px;
+               padding: 5px;
+           }
+           #end{ 
+               padding: 25px;
+               background-color: rgb(19, 16, 44);
+               color:white;
+               margin-top: 192px;
+               text-align: center;
+           }
+        </style>
+    </head>
+    <body>
+        <!-- header section -->
+        <header style="background-color: rgb(252, 253, 255);">
+            <img src="img/svec-main-logo.png" width="210px" height="120" alt="svec-logo" style="margin-left: 100px;">
+            <div class="logo-links"> 
+                <nav class="links">
+                    <div class="link-item">Site Search</div><span id="line"></span>
+                    <div class="link-item"> A-Z Directory</div><span id="line"> &nbsp;\</span>
+                    <div class="link-item">  Gallery</div><span id="line"> &nbsp;\</span>
+                    <div class="link-item"> Careers</div><span id="line"> &nbsp;\</span>
+                    <div class="link-item">Student/Parent Login</div><span id="line"> &nbsp;\</span>
+                    <div class="link-item">Academic Verification</div><span id="line"> &nbsp;\</span>
+                    <div class="link-item">Contact Us</div>
+                </nav>
+                <p> +91 877-2504888 info@vidyanikethan.edu <br><br>
+                <img src="img/nba.png" width="44px" height="40"> &nbsp;
+                <img src="img/nirf-logo.png" width="60" height="40">&nbsp;
+                <img src="img/rank-naac.png" width="94" height="40">&nbsp;
+                <img src="img/teqp.png" width="35" height="40">&nbsp;
+                <img src="img/ugc.png" width="43" height="40">
+                </p>
+            </div>  
+            </header>
+        <!-- header end -->
+
+        <!-- nav bar start -->
+        <nav class="nav">
+            <div class="nav-item nav-item-selected">Home</div><span id="line1">|</span>
+            <div class="nav-item">About Us</div><span id="line1">|</span>
+            <div class="nav-item">Admissions</div><span id="line1">|</span>
+            <div class="nav-item">Academics</div><span id="line1">|</span>
+            <div class ="nav-item">Exams</div><span id="line1"> &nbsp;|</span>
+            <div class ="nav-item">Innovation & Entrepreneurship</div><span id="line1">|</span>
+            <div class ="nav-item">Industry Relations</div><span id="line1">|</span>
+            <div class="nav-item">Training & Placements</div><span id="line1">|</span>
+            <div class="nav-item">Campus Life</div>
+        </nav>
+        <!-- nav bar end -->
+
+
+        <!-- content start-->
+
+        <p style="float:initial">
+            <b>Placement Offers - 2021 (Total: 1836):</b>
+            <marquee style="color:red; margin-left: 19%"> YugaByte (44LPA) - 1 || Amazon (31.25LPA) - 2 || 
+                Infosys - SE (3.6LPA) - 353 || Infosys - SES (5LPA) - 69 || Infosys - PP (8LPA) - 13 
+                || Wipro (3.5LPA) - 218 || TCS - Ninja (3.3LPA) - 224 || TCS - Digital (7.2LPA) - 28 || 
+                Accenture (4.5-6.5LPA) - 175 || Cognizant - Genc (4.5LPA) - 313 || BNY Mellon (11LPA) - 1 ||
+                 AIRBUS (10LPA) - 1 || West Pharma (7.00-8.8LPA) - 6 || Darwinbox (8.4LPA) - 1 || Thoughtworks
+                (8.3LPA) - 1 || HashedIn (8LPA) - 8 || HSBC (7LPA) - 2 || IBI Group (7LPA) - 1 || PWC (7LPA)
+                 - 1 || WileyNext (7LPA) - 6 || Cognizant - GencNext (6.5LPA) - 7 || Cogitate (6LPA) - 2 || 
+                Consultadd (6LPA) - 3 || EPAM (6LPA) - 1 || Juspay (6LPA) - 2 || MAQ Software (6LPA) - 1 || 
+                TEKsystems (6LPA) - 7 || Hexaware PGET (5LPA) - 1 || HCL (3.5LPA) - 36 || Hexaware GET (3.5LPA) 
+            - 20 || KPMG (5LPA) - 1 || Riktam (5LPA) - 1 || Techigai (5LPA) - 1 || Société Générale (4.95LPA </marquee>
+        </p>
+        <!-- images start-->
+        <div id="img">
+            <img src="img/svec-slide-1.jpg" width="1500px">
+        </div>
+        <!-- images end -->
+        <section class="msg">
+                <article class="left-art">
+                    <img src="img/mohanbabu_sir-300x225.jpg" width="370px" height="180px" style="padding:10px;">
+                    <h1 style="text-align: center;">MESSAGE FROM CHAIRMAN</h1>
+                    <P id="msg-id">
+                        Sree Vidyanikethan Education Trust (SVET) was established in 1992, it has surpassed
+                        many a milestone. As an individual, I have the best memories and biggest learning 
+                        experiences in life. I believe every individual deserves best knowledge to lead a 
+                        better life and knowledge comes with learning – one that is based on doing things right
+                        and not merely knowing about how to do them. Learning solutions should be relative to real
+                        life, thereby motivating the learner towards gaining and applying the imbibed knowledge,
+                        disconnecting the superficial parts and connecting sensible aspects.<br>
+                        <b><br>
+                            My best wishes to all !!<br><br>
+                            Dr. M. Mohan Babu
+                        </b>
+                    </P>
+                </article>
+            <br>
+            <article class="left-art">
+                <img src="img/ceo-vishnu-manchu.jpg" width="370px" height="180px" style="padding: 10px;">
+                <h1 style="text-align: center;">MESSAGE FROM CEO</h1>
+                <P id="msg-id">
+                    Welcome to Sree Vidyanikethan Family - to study, to innovate, to inspire!<br>
+                    Whilst Sree Vidyanikethan has marked its successful Silver Jubilee in the field of 
+                    Education, I express my heartfelt gratitude for all your continued support and for 
+                    the confidence that you have placed in us, helping make our longevity possible.
+                    Sree Vidyanikethan is the college – the one Engineering College – that comes to
+                     people’s minds at the mention of Engineering in Andhra Pradesh, under the widely
+                      regarded group of institutions catering the best of education in India.<br>
+                    <b><br>
+                        Vishnu Manchu<br><br>
+                        CEO, Sree Vidyanikethan Engineering College
+                    </b>
+                </P>
+            </article>
+            <aside class="notifications">
+                <h1 class="head-nav">NOTIFICATIONS</h1>
+                <ul>
+                    <li>Academic Calendar 2020-2021 for II-Semester MCA</li>
+                    <li>Mode of instructions (Classes, Taining, Events etc.,) till 03.07.2021</li>
+                    <li>Online Webinar & Workshop on 7th International Yoga Day: ‘Yoga and Life Management Skills’ from 21st to 23rd June from 9:30 AM to 10:30 AM</li>
+                    <li>Mode of instructions (Classes, Taining, Events etc.,) till 26.06.2021</li>
+                    <li>Mode of instructions (Classes, events etc.,) till 12.06.2021</li>
+                    <li>AICTE Training And Learning (ATAL) Academy Sponsored Faculty Development Programme on “Mean Stack Technologies”, 21st – 25th September, 2021</li>
+                    <li>AICTE Training And Learning (ATAL) Academy Sponsored Faculty Development Programme on “Environment and Sustainability: Need of the day”, 13th – 17th September, 2021</li>
+                    <li>AICTE Training And Learning (ATAL) Academy Sponsored Faculty Development Programme on “Futuristic Electric Transportation Systems”, 20th – 24th September, 2021</li>
+                    <li>Academic Calendar 2021-22 for III B.Tech I-Semester</li>
+                    <li>Academic Calendar 2021-22 for IV B.Tech I-Semester</li>
+                    <li>Academic Calendar 2021-22 for MCA V-Semester</li>
+                    <li>Academic Calendar 2020-21 for MCA II-Semester (Revised)</li>
+                </ul>
+            </aside>
+            <br>
+            <aside class="events">
+                <h1 class="head-nav">Upcoming Events</h1>
+                <ul>
+                    <li>AICTE Training And Learning (ATAL) Academy Sponsored Faculty Development Programme on “Futuristic Electric Transportation Systems”, 20th – 24th September, 2021</li>
+                    <li> Faculty Development Programme on “Emerging trends in Automotive and Energy Systems”</li>
+                    <li>Skill Development Training and Capacity Building Program</li>
+                    <li>AICTE Training And Learning (ATAL) Academy Sponsored Faculty Development Programme on “Futuristic Electric Transportation Systems”, 20th – 24th September, 2021</li>
+                    <li> Faculty Development Programme on “Emerging trends in Automotive and Energy Systems”</li>
+                    <li>Skill Development Training and Capacity Building Program</li>
+                </ul>
+            </aside>
+        </section>
+
+        <article class="news">
+            <h1 class="head-nav-2">News & Events</h1>
+            <div class=news-img>
+                <img id="news-img" src="#">
+                <img id="news-img" src="#">
+                <img id="news-img" src="#">
+            </div>
+        </article>
+
+        <article class="achievements">
+            <h1 class="head-nav-2">achievements</h1>
+            <div class=achie-img>
+                <img id="achie-img" src="#">
+                <img id="achie-img" src="#">
+                <img id="achie-img" src="#">
+                <img id="achie-img" src="#">
+            </div>
+        </article>
+        <article class="eminent">
+            <h1 class="head-nav-2">EMINENT PEOPLE VISITED</h1>
+            <div class=eminent-img>
+                <img id="eminent-img" src="#">
+                <img id="eminent-img" src="#">
+                <img id="eminent-img" src="#">
+                <img id="eminent-img" src="#">
+            </div>
+        </article>
+        <br>
+        <!-- content end -->
+
+
+        <!-- footer start -->
+        <footer class="footer">
+
+            <div class="foot-left">
+                <h1 style="text-align: center;">Quick Links</h1>
+                <hr style="width:70%;">
+                <div class="foot">
+                    <ul>
+                        <li>Admission - Indian Nationals</li>
+                        <li>Admission - Foreign Nationals</li>
+                        <li>Sports & Games</li>
+                        <li>Health & Wellness</li>
+                        <li>NSS</li>
+                        <li>Hostel & Dining</li>
+                        <li>Transportation</li>
+                    </ul>
+                </div>
+                <div class="foot">
+                    <ul>
+                        <li>Fee Payments</li>
+                        <li>Library</li>
+                        <li>Facilities</li>
+                        <li>Annual Reports</li>
+                        <li>AICTE</li>
+                        <li>SVEI</li>
+                    </ul>
+                </div>
+                <div class="foot">
+                    <ul>
+                        <li>Anti-Ragging</li>
+                        <li>Policy Documents</li>
+                        <li>Campus Green</li>
+                        <li>Mandatory Disclosure</li>
+                        <li>Best Practices</li>
+                        <li>Grievance Redressal</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foot-right">
+                <h1 style="text-align: center;">Contact Us</h1>
+                <hr style="width:50%;">
+                <div>
+                    <p><b>Sree Vidyanikethan Engineering College</b><br>
+                    Sree Sainath Nagar<br>
+                    Tirupati,<br>
+                    Chittoor(District),<br>
+                    Andhra Pradesh - 517102.<br>
+                    <b>INDIA</b>
+                    <br><br>
+                    +91 877-2504888 <br>
+                    info@vidyanikethan.edu
+                    </p>
+                </div>
+            </div>
+            <div id="end">
+                @2020 Sree Vidyanikethan Engineering College. All Rights Reserved. Designed and Developed by Okatti Media and Designs
+            </div>
+        </footer>
+        <!-- footer end -->
+    </body>
+</html>
