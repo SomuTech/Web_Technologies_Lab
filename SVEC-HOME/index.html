@@ -6,159 +6,10 @@
         <meta name="keywords" content="HTML, css,Tags,front end " />
         <meta name="viewport" content="width=device-width,initial-scale=1.0 shrink-to-fit=no" />
         <title>SVEC HOME</title>
-        <style>
-            .nav { 
-                display:flex;
-               background-color: #27334F;
-            }
-            .nav-item:hover{
-                background-color: #ec3f3f;
-                cursor: pointer;
-            }
-            .nav-item-selected {
-                background-color: #ec3f3f;
-            }
-            .nav-item {
-                padding: 0.7rem;
-                height: 100%;
-                font-size: 1rem;    
-                color: white;
-                font-family: roboto,arial,sans-serif;
-           }
-           .head-nav{
-                padding: 10px;
-                border:1px solid black;
-                background-color: #ED2D5A;
-                width:680px;
-                margin-left: -1.5px;
-                margin-top: -4px;
-                color: white;
-           }
-           .head-nav-2{
-            padding: 10px;
-            border:1px solid black;
-            background-color: #ED2D5A;
-            color: white;
-           }
-           li:hover{
-                color: rgb(243, 56, 56);
-                cursor: pointer;
-           }
-           .links{
-               display:flex;
-               margin-left: 665px;
-           }
-           .logo-links{
-            text-align:right;
-            margin-right: 150px;
-             margin-top: -125px;
-        }
-           #line{
-               font-size: 25px;
-               font-weight: bold;
-               color: red;
-           }
-           #line1{
-               font-size: 40px;
-               margin-top: -5px;
-               color:#ec3f3f;
-           }
-           .link-item{
-               text-align: right;
-           }
-           .link-item:hover{
-            background-color: #e96868;
-            cursor: pointer;
-           }
-           .msg{
-               padding: 15px;
-               margin-top: 5px;
-               margin-left: 150px;
-               margin-right: 150px;
-           }
-           #msg-id{
-               color:#27334F;
-               text-align: justify;
-               font-family: sans-serif;
-               font-size: 16px;
-           }
-           .left-art{
-               padding: 5px;
-               height: 600px;
-               width: 400px;
-               border: 1px solid red;
-           }
-           .notifications, .events{
-            border:1px solid red;
-            width:700px;
-            font-family: Arial, Helvetica, sans-serif;
-            color: #337AB7;
-           }
-           #msg-id:hover{
-               background-color: #27334F;
-               color:white;
-           }
-           .notifications{
-               height:700px;
-               float: right;
-               margin-top: -1242px;
-           }
-           .events{
-            height:500px;
-            float:right;
-            margin-top: -520px;
-        }
-        li{
-            padding: 8px;
-        }
-        .news,.achievements,.eminent{
-            margin-left: 150px;
-            margin-right: 150px;
-        }
-        .news-img,achie-img,eminent-img{
-            flex-direction: row;
-            padding: 5px;
-        }
-        #news-img{
-            padding: 5px;
-            width:385px;
-            height:250px;
-        }
-        #achie-img,#eminent-img{
-            padding: 5px;
-            width:280px;
-            height: 220px;
-        }
-        .footer{
-            background-color: #27334F; 
-            color:white;  
-            font-family: Arial, Helvetica, sans-serif; 
-            padding:5px;
-            height:500px;
-        }
-        .foot-left{
-            width: 65%;
-            margin-left: 150px;
-        }
-        .foot-right{
-            width:30%;
-            margin-left: 70%;
-            margin-right: 50px;
-            margin-top: -82px;
-        }
-           .foot{
-               float: left;
-               font-size: 15px;
-               padding: 5px;
-           }
-           #end{ 
-               padding: 25px;
-               background-color: rgb(19, 16, 44);
-               color:white;
-               margin-top: 192px;
-               text-align: center;
-           }
-        </style>
+        <link rel="stylesheet" href="style.css">
+        <!-- <style>
+           
+        </style> -->
     </head>
     <body>
         <!-- header section -->
@@ -174,7 +25,14 @@
                     <div class="link-item">Academic Verification</div><span id="line"> &nbsp;\</span>
                     <div class="link-item">Contact Us</div>
                 </nav>
-                <p> +91 877-2504888 info@vidyanikethan.edu <br><br>
+                <p> +91 877-2504888 info@vidyanikethan.edu &nbsp;
+                    <img src="img/fb.jpg" width="30px" height="30px" >
+                    <img src="img/ld.png" width="30px" height="30px" >
+                    <img src="img/yt.png" width="30px" height="30px" >
+                    <img src="img/tr.png" width="30px" height="30px" >
+                    <img src="img/" width="30px" height="30px">
+                    <img src="#" width="30px" height="30px" >
+                    <br><br>
                 <img src="img/nba.png" width="44px" height="40"> &nbsp;
                 <img src="img/nirf-logo.png" width="60" height="40">&nbsp;
                 <img src="img/rank-naac.png" width="94" height="40">&nbsp;
@@ -203,6 +61,7 @@
         <!-- content start-->
 
         <p style="float:initial">
+            <div style="display: inline;">
             <b>Placement Offers - 2021 (Total: 1836):</b>
             <marquee style="color:red; margin-left: 19%"> YugaByte (44LPA) - 1 || Amazon (31.25LPA) - 2 || 
                 Infosys - SE (3.6LPA) - 353 || Infosys - SES (5LPA) - 69 || Infosys - PP (8LPA) - 13 
@@ -214,10 +73,13 @@
                 Consultadd (6LPA) - 3 || EPAM (6LPA) - 1 || Juspay (6LPA) - 2 || MAQ Software (6LPA) - 1 || 
                 TEKsystems (6LPA) - 7 || Hexaware PGET (5LPA) - 1 || HCL (3.5LPA) - 36 || Hexaware GET (3.5LPA) 
             - 20 || KPMG (5LPA) - 1 || Riktam (5LPA) - 1 || Techigai (5LPA) - 1 || Société Générale (4.95LPA </marquee>
+        </div>
         </p>
         <!-- images start-->
-        <div id="img">
-            <img src="img/svec-slide-1.jpg" width="1500px">
+        <div class="img-slide">
+            <div id="slide-cont">
+                <h1>svec</h1>
+            </div>
         </div>
         <!-- images end -->
         <section class="msg">
@@ -290,28 +152,61 @@
         <article class="news">
             <h1 class="head-nav-2">News & Events</h1>
             <div class=news-img>
-                <img id="news-img" src="#">
-                <img id="news-img" src="#">
-                <img id="news-img" src="#">
+                <div class="img-cont">
+                        <img id="news-img" src="img/event-1.jpg">
+                        <h3 id="img-cont-h1">A Report on Traditional Day 2021</h3>
+                </div>
+                <div class="img-cont">
+                    <img id="news-img" src="img/event-2.jpg">
+                    <h3 id="img-cont-h1">1st AP State Duty Meet</h3>
+                </div>
+                <div class="img-cont">
+                    <img id="news-img" src="img/bus.jpg">
+                    <h3 id="img-cont-h1">B Tech 1st Year students Buses</h3>
+                </div>
             </div>
         </article>
 
         <article class="achievements">
             <h1 class="head-nav-2">achievements</h1>
             <div class=achie-img>
-                <img id="achie-img" src="#">
-                <img id="achie-img" src="#">
-                <img id="achie-img" src="#">
-                <img id="achie-img" src="#">
+                <div class="img-cont">
+                    <img id="achie-img" src="img/ach.jpg">
+                    <h3 id="img-cont-h1">Best Engineering College in AP</h3>
+                </div> 
+                <div class="img-cont">
+                    <img id="achie-img" src="img/achi-1.jpg">
+                    <h3 id="img-cont-h1">Ranked by 'AAAA' in Careers360</h3>
+                </div>
+                <div class="img-cont">
+                    <img id="achie-img" src="img/achi-2.jpg">
+                    <h3 id="img-cont-h1">ISO 9001 : 2015</h3>
+                </div>
+                <div class="img-cont">
+                    <img id="achie-img" src="img/aicte-1.jpg">
+                    <h3 id="img-cont-h1">AICTE Sponsored ED Cell</h3>
+                </div>
             </div>
         </article>
         <article class="eminent">
             <h1 class="head-nav-2">EMINENT PEOPLE VISITED</h1>
             <div class=eminent-img>
-                <img id="eminent-img" src="#">
-                <img id="eminent-img" src="#">
-                <img id="eminent-img" src="#">
-                <img id="eminent-img" src="#">
+                <div class="img-cont">
+                    <img id="eminent-img" src="img/em-1.jpg">
+                    <h3 id="img-cont-h1">7th Graduation Day</h3>
+                </div>
+                <div class="img-cont">
+                    <img id="eminent-img" src="img/em-2.jpg">
+                    <h3 id="img-cont-h1">8th Graduation Day</h3>
+                </div>
+                <div class="img-cont">
+                    <img id="eminent-img" src="img/em-3.jpg">
+                    <h3 id="img-cont-h1">6th Graduation Day</h3>
+                </div>
+                <div class="img-cont">
+                    <img id="eminent-img" src="img/em-4.jpg">
+                    <h3 id="img-cont-h1">3rd Graduation Day</h3>
+                </div>
             </div>
         </article>
         <br>

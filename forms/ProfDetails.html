@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0 shrink-to-fit=no" />
         <title>Professional Details</title>
     </head>
-    <body>
+    <body style="margin-left: 5%; margin-right: 20%">
         <p style="font-size: 25px; font-weight: bold; font-family: Arial;">Fill the following details</p>
         <p style="color:red;">* fields are mandatory</p>
 
-        <form style="margin-left: 50px; margin-right: 400px; font-size:large; font-family: Arial;" action="eduDetails.html">
-            <fieldset style="border: rgb(79, 77, 77) solid ;">
+        <form style="margin-left: 50px; font-size:large; font-family: Arial;" action="eduDetails.html">
+            <fieldset style="border: 5px  solid silver ;">
                 <legend style="color:cadetblue; ">Professional Details</legend>
             <label for="id">Enter Job ID * : </label>
             <input type="text" id="id" name="id" required><br><br>
             <label for="role">Enter your Job role* : </label>
             <input type="text" id="role" name="role" required><br><br>
             
-            <label for="jod">enter Joinig Date* : </label>
+            <label for="jod">enter Joining Date* : </label>
             <input type="date" id="jod" name="date"><br><br>
             <label for="city">City: </label>
             <input type="text" id="city" name="city" placeholder="enter city"><br><br>
             <label for="exp">Enter Experience* :</label>
             <input type="number" id="exp" name="exp" placeholder="years"><br><br>
             <label for="about">About:</label><br>
-            <textarea id="about" name="about" rows="10" cols="60">Explain your job Experience and about your Compeny in few lines</textarea><br><br>
+            <textarea id="about" name="about" rows="10" cols="60" spellcheck="true">Explain your job Experience and about your Company in few lines</textarea><br><br>
          <input type="reset"
           style="
-            background-color: rgb(111, 146, 147);
-            color: blue;
+            background-color: rgb(95, 100, 160);
+            color: white;
             cursor: pointer;
-            margin-left: 100px;
-          "
+            margin-left: 15%;"
         />
-            <input type="submit" style="background-color: rgb(122, 152, 154); color:blue; cursor: pointer; margin-left: 100px;">
+            <input type="submit" style="background-color: rgb(95, 100, 160); color:white; cursor: pointer; margin-left: 15%;">
             </fieldset>
         </form>
     </body>
