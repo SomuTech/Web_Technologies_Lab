@@ -2,8 +2,104 @@
 <html>
     <head>
         <title>Custom Data Attributes</title>
+        <style>
+            h1{
+                padding: 5px;
+                text-align: center;
+            }
+            .types{
+                border: 1px solid red;
+                display: flex;
+            }
+            ul{
+                text-decoration: line-through;
+            }
+            .type-1,.type-2{
+
+                margin-left: 5%;
+                border: 1px solid red;
+                padding: 5px;
+            }
+        </style>
     </head>
     <body>
-        
+        <header>
+            <h1>Restaurant Menu</h1>
+        </header>
+        <div class="types">
+            <div class="type-1">
+                <h4><b>Chinese Soup</b></h4>
+                <ol>
+                    <li onclick="showDetails(this)" data-available="Yes" data-offer="10%">Clear soup.............120</li>
+                    <li>Hot & sour soup............140</li>
+                    <li>Noodle soup...........110</li>
+                    <li>Talumein soup...........170</li>
+                </ol>
+                <br>
+                <h4><b>Indian Shorbha</b></h4>
+                <ol>
+                    <li>Murg shorba...........140</li>
+                    <li>Palak shorba............200</li>
+                    <li>Tomato shorba.........90</li>
+                    <li>
+                        <ol>
+                            <h5>Special</h5>
+                            <li>chicken Biryani</li>
+                            <li>Leman Rice</li>
+                            <li>Tomato Rice</li>
+                        </ol>
+                    </li>
+                </ol>
+                <br>
+                <h4><b>Chinese Soup</b></h4>
+                <ol>
+                    <li>Clear soup.............120</li>
+                    <li>Hot & sour soup............140</li>
+                    <li>Noodle soup...........110</li>
+                    <li>Talumein soup...........170</li>
+                </ol>
+            </div>
+            <div class="type-2">
+                <h4><b>Continental soup</b></h4>
+                <ol>
+                    <li>Cream of broccoli...........140</li>
+                    <li>cream of chicken............200</li>
+                    <li>cream of tomato.........90</li>
+                </ol>
+                <br>
+                <h4><b>Raita</b></h4>
+                <ol>
+                    <li>Boodi raita...........140</li>
+                    <li>Mix veg raita............200</li>
+                    <li>plain curd.........60</li>
+                </ol>
+                <br>
+                <h4><b>Continental soup</b></h4>
+                <ol>
+                    <li>Cream of broccoli...........140</li>
+                    <li>cream of chicken............200</li>
+                    <li>cream of tomato.........90</li>
+                </ol>
+            </div>
+        </div>
+
+
+        <br><br><br>
+<!-- 
+
+
+        <ul>
+            <li onclick="showDetails(this)" id="mov" data-movie-name="saaho">Prabhas </li>
+        </ul> -->
+        <script>
+            function showDetails(items) {
+                var available = items.getAttribute("data-available");
+                var offer = items.getAttribute("data-offer")
+                alert( "Available - " + available + "\nOffer - " + offer);
+            }
+        </script>
+        <footer>
+
+        </footer>
     </body>
 </html>

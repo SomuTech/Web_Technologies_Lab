@@ -14,9 +14,9 @@
             }
             #main{
                 background-color: rgb(25, 79, 126);
-                width: auto;
+                width: 99%;
                 height: 660px;
-                padding: 45px;
+                padding: 35px;
             }
             #content-1{
                 border: 3px solid rgb(29, 28, 28);
@@ -24,24 +24,25 @@
                 height: 100px;
                 background-color: rgba(35, 40, 144, 0.87);
             }
-            #content-2{
-                width: 200px;
-                height: 530px;
+            #content-2,#content-3,#content-4{
+                width: 210px;
+                height: 550px;
                 background-color: rgba(10, 10, 49, 0.952);
+            }
+            #content-2{
                 padding: 0px;
+                margin-top: -40px;
             }
             #img{
                 margin-top: 10px;
-                width:165px;
-                height:105px;
+                width:170px;
+                height:100px;
             }
             #content-3{
-                background-color: rgba(10, 10, 49, 0.952);
-                align-content: center;
                 width: 700px;
-                height: 530px;
+                height: 550px;
                 margin-left: 250px;
-                margin-top: -530px;
+                margin-top: -547px;
             }
             #text{
                 width:135px;
@@ -50,21 +51,20 @@
                 background-color: rgb(24, 24, 39);
             }
             #video{
-                width:215px;
-                height:115px;
+                width:265px;
+                height:125px;
             }
             #audio{
                 width:165px;
                 height:30px;
                 border: 0.5px solid black;
             }
-            #content-4{
-                width: 250px;
-                height: 520px;
+            #content-4{  
                 float: right;
-                margin-top: -530px;
                 background-color: rgba(10, 10, 49, 0.952);
-                padding: 5px;
+                padding: 1px;
+                margin-top: -547px;
+                width: 335px;
             }
             h1{
                 text-align: center;
@@ -83,7 +83,7 @@
         <div id="main">
             <div id="content-1">
                 <h1>Box Office Movie Review</h1>
-                <h4>Movie Name:<b style="color: rgb(194, 61, 61);">Jersey</b></h4>
+                <h4 style="margin-top: -15px;">Movie Name: <b style="color: rgb(194, 81, 61); font-size:25px"><b>JERSEY</b></b></h4>
             </div>
             <br><br>
 
@@ -104,6 +104,7 @@
                     <div id="img">
                         <img src="media/img/j3.jfif" id="img">
                     </div>
+                    <p>Images</p>
                 </center>
             </div>
             <div id="content-3">
@@ -146,13 +147,13 @@
                             <li>Performance</li>
                         </ul>
                     </div>
-                    <p>Video</p>
+                    <p>Video - Teaser</p>
                     <div id="video">
                         <video id="video" controls>
                             <source src="media/video/jersey2.mp4" type="video/mp4">
                         </video>
                     </div>
-                    <br>
+                    <p>Video - Trailer</p>
                     <div id="video">
                         <video id="video" controls>
                             <source src="media/video/j3.mp4" type="video/mp4">
