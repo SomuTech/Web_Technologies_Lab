@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <style>
+            body{
+                margin-top: 2%;
+                margin-left:5%;
+                margin-right: 5%;
+            }
+            .div-1{
+                padding: 10px;
+                border: 1px solid black;
+            }
+            #head-1{
+                text-align: center;
+            }
+            .nav{
+                padding:5px;
+                display:flex;
+            }
+            .nav-item{
+                width: 100%;
+                padding:5px;
+                text-align: justify;
+                margin-left: 50px;
+            }
+            .main-2{
+                display: flex;
+
+            }
+            .div-2{
+                border: 1px solid black;
+                width: 20%;
+                height: 450px;
+            }
+            .div-3,.div-4{
+                margin-left: 35px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            .div-3{
+                border: 1px dashed black;
+            }
+            .div-4{
+                border: 1px solid black;
+                width: 25%;
+                padding: 5px;
+            }
+            nav > * {
+                display: block;
+                margin: 18px 25px 18px 0;
+                }
+            iframe{
+                border:none;
+                overflow: hidden;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div style="border: 1px solid black;">
+            <div class="main-1">
+                <div class="div-1">
+                    <img src="#" width="25px" height="25" alt="logo">
+                    <h2 id="head-1">Venus Book Store</h2>
+                    <nav class="nav">
+                        <div class="nav-item nav-item-selected">Home</div>
+                        <div class="nav-item" onclick="catalogue.html">Catalogue</div>
+                        <div class="nav-item">Latest Arrivals</div>
+                        <div class="nav-item">Best Sellers</div>
+                        <div class="nav-item">Contact us</div>
+                        <div class="nav-item">Search</div>
+                    </nav>
+                </div>
+            </div>
+        <div class="main-2">
+            <div class="div-2">
+                <nav class="cell">
+                    <a href="computers.html" target="catalogue">Computers</a>
+                    <a href="Electronics.html" target="catalogue">Electronics</a>
+            </div>               
+            <br>
+            <div class="div-3">
+                <iframe class="cell" name="catalogue" src="computers.html" style="width:500px"></iframe>
+            </div>
+            <br>
+            <div class="div-4">
+                <label for="username">User Name* : </label>
+                <input type="text" id="username" required placeholder="user name"><br><br>
+                <label for="password">Password* : </label>
+                <input type="password" id="password" required placeholder="password"><br><br>
+                <input type="button" value="Sign in" style="margin-left:40%"><br><br>
+                <p>New User</p>
+                <input type="button" value="Create Account" style="margin-left:40%">
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

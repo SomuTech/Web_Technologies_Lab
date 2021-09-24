@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+    </head>
+    <body>
+        <p style="font-size: 25px; font-weight: bold; font-family: Arial;">Fill the following details</p>
+        <p style="color:red;">* fields are mandatory</p>
+        <form style="margin-left: 5%; margin-right: 50%; font-size:large; font-family: Arial;" action="home.html">
+            <fieldset style="border: black solid ;">
+                <legend style="color:cadetblue; ">Create Account</legend>
+            <label for="fname">First Name: </label>
+            <input type="text" id="fname" name="fname" placeholder="enter first name" required><br><br>
+            <label for="lname">Last Name: </label>
+            <input type="text" id="lname" name="lname" placeholder="enter last name" required><br><br>
+            <label for="username">User Name* : </label>
+            <input type="text" id="username" required placeholder="user name"><br><br>
+            <label for="password">Password* : </label>
+            <input type="password" id="password" required placeholder="password"><br><br>
+            <label for="Cpassword"> Conform Password* : </label>
+            <input type="password" id="Cpassword" required placeholder="Conform password"><br><br>
+            <input type="submit" value="Sign in" onclick="save(),display()" style="margin-left:40%"><br><br>
+        </form>
+        <!-- <script>
+            function save(){
+                let fname = document.getElementById("fname");
+                let lname = document.getElementById("lname");
+                fname.innerText = document.getElementById("fname").value;
+                lname.innerText = document.getElementById("lname").value;
+
+                if(typeof(Storage) !== "undefined"){
+                    var user=document.getElementById("username").value;
+                    var pwd=document.getElementById("password").value;
+                    //local storage
+                    localStorage.setItem("key1",user);
+                    localStorage.setItem("key2",pwd);
+                    //session storage
+                    sessionStorage.setItem("key1",user);
+                    sessionStorage.setItem("key2",pwd);
+                }
+            }
+        </script> -->
+        <script src="script.js"></script>
+    </body>
+</html>

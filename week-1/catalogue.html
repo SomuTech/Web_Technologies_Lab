@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Catalogue</title>
+        <style>
+            body{
+                margin-top: 2%;
+                margin-left:10%;
+                margin-right: 10%;
+            }
+            .div-1{
+                padding: 10px;
+                border: 1px solid black;
+            }
+            #head-1{
+                text-align: center;
+            }
+            .nav{
+                padding:5px;
+                display:flex;
+            }
+            .nav-item{
+                width: 100%;
+                text-align: justify;
+                margin-left: 50px;
+            }
+
+            .main-2{
+                display: flex;
+            }
+            .div-2{
+                border: 1px solid black;
+                width: 20%;
+                height: 450px;
+                padding: 10px;
+            }
+            .div-3{
+                margin-left: 40px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                padding: 5px;
+            }  
+            nav > * {
+                display: block;
+                margin: 18px 25px 18px 5px;
+                }
+            iframe{
+                border:none;
+                overflow: hidden;
+                width:850px;
+                height: 400px;
+            } 
+        </style>
+    </head>
+    <body>
+        <div style="border: 1px solid black;">
+            <div class="main-1">
+                <div class="div-1">
+                    <img src="#" width="25px" height="25" alt="logo">
+                    <h2 id="head-1">Venus Book Store</h2>
+                    <nav class="nav">
+                        <div class="nav-item"><a href=homePage.html>Home</a></div>
+                        <div class="nav-item nav-item-selected">Catalogue</div>
+                        <div class="nav-item">Latest Arrivals</div>
+                        <div class="nav-item">Best Sellers</div>
+                        <div class="nav-item">Contact us</div>
+                        <div class="nav-item">Search</div>
+                    </nav>
+                </div>
+            </div>
+        <div class="main-2">
+            <div class="div-2">
+                <nav class="nav-2">
+                    <a href="computers.html" target="catalogue">Computers</a>
+                    <a href="Electronics.html" target="catalogue">Electronics</a>
+                    <a href="computers.html" target="catalogue">Computers</a>
+                    <a href="Electronics.html" target="catalogue">Electronics</a>
+            </div>               
+            <br>
+            <div class="div-3">
+                <iframe class="nav" name="catalogue" src="computers.html"></iframe>
+            </div>
+            <br>
+        </div>
+    </div>
+    </body>
+</html>
