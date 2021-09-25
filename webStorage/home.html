@@ -2,16 +2,38 @@
 <html>
     <head>
         <style>
+            .main{
+                margin: 2% 10% 10% 10%;
+                font-family: 'Lucida Sans', Verdana, sans-serif;
+            }
+            .head{
+                background-color: azure;
+                text-align: center;
+                padding: 3%;
+                border: 3px solid rgb(196, 226, 151);
+            }
+            .content{
+                margin: 2% 2% 2% 12%;
+            }
+            p{
+                color: green;
+                font-size:1.5vw;
+            }
+            span{
+                color: black;
+            }
         </style>
     </head>
     <body onload="display()">
-        <div>
-            <h1>Welcome to Venus Book Store</h1>
-            <p>Registration completed successfully.</p><br>
-            <h3>Your details...</h3>
-            <h3> Name : <span id="name"></span></h3>
-             <h3>User Name: <span id="username"></span></h3>
-             <h3>Password : <span id="password"></span></h3>
+        <div class="main">
+            <h1 class="head">Welcome to Venus Book Store</h1>
+            <div class="content">
+                <p>*Your Registration completed successfully.</p><br>
+                <h3>Your details...</h3>
+                <p> Name : <span id="name"></span><br>
+                User Name: <span id="username"></span><br>
+                Password : <span id="password"></span></p>
+            </div>
         </div>
 
         <!-- <script> 
