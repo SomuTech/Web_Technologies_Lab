@@ -1,3 +1,4 @@
+
 .nav {
   display: flex;
   background-color: #27334f;
@@ -38,6 +39,7 @@
   width: 100%;
   height: 600px;
   margin-top: -9%;
+  /* box-shadow: 2px 6px 6px #ccc; */
 }
 #slide-cont{
   border:1px solid black;
@@ -52,11 +54,11 @@ li:hover {
 }
 .links {
   display: flex;
-  margin-left: 665px;
+  margin-left: 48%;
 }
 .logo-links {
   text-align: right;
-  margin-right: 150px;
+  margin-right: 10%;
   margin-top: -125px;
 }
 #line {
@@ -77,38 +79,40 @@ li:hover {
   cursor: pointer;
 }
 .msg {
-  padding: 15px;
+  padding: 10px;
   margin-top: 5px;
   margin-left: 10%;
   margin-right: 10%;
 }
-#msg-id {
+.temp {
   color: #27334f;
   text-align: justify;
   font-family: sans-serif;
   font-size: 16px;
+  border-radius: 10px;
+}
+.temp:hover {
+  background-color: #27334f;
+  color: white;
 }
 .left-art {
   padding: 5px;
-  height: 600px;
-  width: 400px;
+  height: 3750%;
+  width: 35%;
   border: 1px solid red;
 }
 .notifications,
 .events {
   border: 1px solid red;
-  width: 700px;
+  width: 59.6%;
   font-family: Arial, Helvetica, sans-serif;
   color: #337ab7;
 }
-#msg-id:hover {
-  background-color: #27334f;
-  color: white;
-}
+
 .notifications {
-  height: 700px;
+  height: 4375%;
   float: right;
-  margin-top: -1242px;
+  margin-top: -95%
 }
 .events {
   height: 500px;
@@ -134,6 +138,7 @@ li {
   width: 385px;
   height: 220px;
   padding: 5px;
+  box-shadow: 2px 6px 6px #ccc;
 }
 .img-cont{
   border:1px solid rgb(243, 243, 243);  
@@ -153,6 +158,8 @@ li {
   padding: 5px;
   width: 280px;
   height: 220px;
+  box-shadow: 2px 6px 6px #ccc;
+
 }
 .footer {
   background-color: #27334f;
@@ -177,9 +184,9 @@ li {
   padding: 5px;
 }
 #end {
-  padding: 25px;
+  padding: 1.5%;
   background-color: rgb(19, 16, 44);
   color: white;
-  margin-top: 192px;
+  margin-top: 12%;
   text-align: center;
 }
