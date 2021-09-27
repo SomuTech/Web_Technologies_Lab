@@ -1,15 +1,21 @@
 body{
     margin-left: 15%;
     margin-right: 15%;
-    background-color: rgb(243, 233, 221);
-    color: white;
+    background-image: url(img/—Pngtree—menu\ background\ image_1191502.jpg);
+    background-size: 65% 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
     font-family: 'Lucida Sans', 'Lucida Sans Regular',sans-serif;
+    color: white;
+
+}
+.content{
     display: flex;
 }
 .types,.images{
-    background-color:rgb(73, 69, 64);
-    padding: 50px;
-    width: 50%;
+    margin-top: 10%;
+    padding: 100px;
+    width: 30%;
 }
 h1{
     text-shadow: 10px 5px 6px #ccc;
@@ -29,6 +35,7 @@ ul{
 }
 li{
     padding: 5px;
+    color: black;
 }
 
 li:hover{
@@ -51,4 +58,9 @@ li:hover{
 #img{
     border-radius: 10px;
    box-shadow: 10px 6px 6px #ccc;
+}
+footer > h1{
+    text-align: center;
+    color: blue;
+    text-shadow: 10px 5px 6px rgb(41, 41, 240);
 }
