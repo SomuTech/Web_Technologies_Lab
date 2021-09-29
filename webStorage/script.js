@@ -15,7 +15,6 @@ function save() {
         sessionStorage.setItem("key2", lname);
     }
 }
-
 function display(){
     let name = sessionStorage.getItem("key1") + " " + sessionStorage.getItem("key2");
     document.getElementById("name").innerText= name;
