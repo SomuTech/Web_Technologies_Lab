@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Storage</title>
+    </head>
+    <body>
+        <h1>dfkvhjdfk</h1>
+
+    <script>
+        var db=openDatabase("StoreBox", '1.0', 'Student DB', 3*1024*1024);
+        db.transaction(function(tx){
+            tx.executeSql('create table student(id number,name varchar(10),dept varchar(4),gender varchar(5))');
+            tx.executeSql('insert into student(10,"vinay","IT","M")');
+        })
+
+        db.transaction(function(tx){
+          tx.executeSql('select *from student');
+        })
+    </script>
+    </body>
+</html>
+
