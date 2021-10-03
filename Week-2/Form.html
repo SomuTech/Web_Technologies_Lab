@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
      <title>Registration</title>
   </head>
   <body>
     <h1>Registration Form</h1>
     <div id = "message">
-      <form  action="FormData.html">
+      <form  action="FormData.html" style="margin-left: 5%; margin-right:5%; font-size:large; font-family: Arial;">
         <fieldset style="border: black solid ;">
           <legend style="color:cadetblue; ">Create Account</legend>
       <label for="fname">First Name: </label>
@@ -27,18 +29,18 @@
       <label for="address">City: </label>
       <input type="text" id="address" name="city" placeholder="enter city" required><br><br>
       <label for="pincode">Postal Code* : </label>
-      <input type="number" id="pincode" name="postal code" placeholder="enter postal code" maxlength="6" required><br><br>
+      <input type="number" id="pincode" name="postal code" placeholder="enter postal code" required><br><br>
       <label for="phone">Mobile Number: </label>
-      <input type="text" id="phone" name="phone" placeholder="enter mobile number" ><br><br>
+      <input type="tel" id="phone" name="phone" placeholder="enter mobile number" ><br><br>
       <label for="email">Email Address: </label>
       <input type="email" id="email" name="email" placeholder="enter email address" required><br><br>
       <label for="username">User Name* : </label>
       <input type="text" id="username" required placeholder="user name"><br><br>
       <label for="password">Password* : </label>
       <input type="password" id="password" required placeholder="password"><br><br>
-        <input type='button' value='submit' onclick='save()'>
-        <input type='reset' value='reset'>
-        <input type="submit" value="view">
+        <input type='button' value='submit' onclick='save()' style=" background-color: rgb(95, 100, 160); color: white; cursor: pointer;"/> &nbsp; &nbsp;
+        <input type="reset" style=" background-color: rgb(95, 100, 160); color: white; cursor: pointer;"/>&nbsp; &nbsp;
+        <input type="submit" style="background-color: rgb(95, 100, 160); color:white; cursor: pointer;"/>
       </form>
     </div>
     <script src="creation.js"></script>
