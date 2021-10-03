@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <title>Registration</title>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <div id = "message">
+      <form  action="FormData.html">
+        <fieldset style="border: black solid ;">
+          <legend style="color:cadetblue; ">Create Account</legend>
+      <label for="fname">First Name: </label>
+      <input type="text" id="fname" name="fname" placeholder="enter first name" required><br><br>
+      <label for="lname">Last Name: </label>
+      <input type="text" id="lname" name="lname" placeholder="enter last name" required><br><br>
+
+      <!-- <p>Choose your Gender:</p>
+      <input type="radio" id="gender" name="option" value="Male">
+      Male<br>
+      <input type="radio" id="gender" name="option" value="Female">
+      Female<br>
+      <input type="radio" id="gender" name="option" value="Other">
+      Other<br><br> -->
+
+      <label for="dob">Date of Birth* : </label>
+      <input type="date" id="dob" name="dob"><br><br>
+      <label for="address">City: </label>
+      <input type="text" id="address" name="city" placeholder="enter city" required><br><br>
+      <label for="pincode">Postal Code* : </label>
+      <input type="number" id="pincode" name="postal code" placeholder="enter postal code" maxlength="6" required><br><br>
+      <label for="phone">Mobile Number: </label>
+      <input type="text" id="phone" name="phone" placeholder="enter mobile number" ><br><br>
+      <label for="email">Email Address: </label>
+      <input type="email" id="email" name="email" placeholder="enter email address" required><br><br>
+      <label for="username">User Name* : </label>
+      <input type="text" id="username" required placeholder="user name"><br><br>
+      <label for="password">Password* : </label>
+      <input type="password" id="password" required placeholder="password"><br><br>
+        <input type='button' value='submit' onclick='save()'>
+        <input type='reset' value='reset'>
+        <input type="submit" value="view">
+      </form>
+    </div>
+    <script src="creation.js"></script>
+  </body>
+</html>
+

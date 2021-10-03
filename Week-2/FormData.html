@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Employees Data</title>
+    <style>
+      th{
+        background-color: rgb(88, 150, 242);
+        color: white;
+      }
+      td{
+        background-color: rgb(206, 234, 245);
+        text-align: center;
+      }
+      th:nth-child(even){
+        background-color: rgb(2, 192, 255);
+      }
+      td:nth-child(odd){
+        background-color: rgb(199, 215, 240);
+      }
+
+    </style>
+  </head>
+  <body onload='getDatabase()'>
+    <h2>Student Details</h2>
+    <table id="studentTable" width="70%" align="center">
+      <thead>
+        <th>NAME</th>
+        <!-- <th>GENDER</th> -->
+        <th>PINCODE</th>
+        <th>PHONE</th>
+        <th>DATE OF BIRTH</th>
+        <th>USERNAME</th>
+        <th>EMAIL</th>
+      </thead>
+      <!-- <tr>
+      </tr>   -->
+    </table>
+    <script src="show.js"></script>
+  </body>
+</html>
+
