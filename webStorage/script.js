@@ -1,6 +1,6 @@
 function save() {
     if (typeof (Storage) !== "undefined") {
-
+        console.log("jhgfds");
         var user = document.getElementById("username").value;
         var pwd = document.getElementById("password").value;
 

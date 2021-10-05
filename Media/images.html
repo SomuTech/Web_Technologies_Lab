@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Responsive Images</title>
+        <style>
+            body{
+                margin: 0 5% 5% 5%;
+                background-color: aliceblue;
+            }
+            header{
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        .images{
+            padding: 15px;
+            float: left;
+            width: 20%;
+            height: 20%;
+        }
+        #img{
+            border: 2px solid gray;
+            box-shadow: 2px 6px 6px #ddd;
+        }
+        @media screen and (max-width: 992px){
+            .images {
+              width: 50%;
+            }
+        }
+        @media screen and (max-width: 600px){
+            .images {
+                width: 100%;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Responsive Images Using Media Queries</h1>
+        </header>
+        <div class="content">
+            <div class="images">
+                <img id="img" src="img/img-1.jfif" width="250" height="250">
+            </div>
+            <div class="images">
+                <img id="img" src="img/img-2.jfif" width="250px" height="250px">
+            </div>
+            <div class="images">
+                <img id="img" src="img/img-5.jfif" width="250px" height="250px">
+            </div>
+            <div class="images">
+                <img id="img" src="img/img-4.jfif" width="250px" height="250px">
+            </div>
+        </div>
+    </body>
+</html>

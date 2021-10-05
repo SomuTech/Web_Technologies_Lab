@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Media Queries</title>
+        <style>
+            body{
+                background-color: antiquewhite;
+            }
+            @media screen and (min-width:400px) and (min-height: 600px){
+                body{
+                    background-color:red;
+                }
+                h1{
+                    color: rgb(31, 107, 240);
+                }
+                p{
+                    color: rgb(0, 32, 128);
+                }
+            }
+
+            @media screen and (min-width:900px){
+                body{
+                    background-color: yellow;
+                }
+                h2:hover{
+                    color: blue;
+                }
+                p{
+                    color: green;
+                }
+            }
+            @media print{
+               body{
+                   background-color: white;
+                   color: black;
+               }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>SomuTech</h1>
+        <p>Web Technologies</p>
+        <h2>Front End Development</h2>
+    </body>
+</html>

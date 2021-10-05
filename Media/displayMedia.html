@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display</title>
+        <style>
+            body{
+                background-color: antiquewhite;
+            }
+            header{
+                text-align: center;
+                color:blue;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+        .content{
+            margin-left: 25%;
+            text-align: center;
+            width: 50%;
+            height: auto;
+            border: solid black 1px;
+            background-color: rgb(245, 234, 219);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
+        }
+        @media screen{
+            /* */
+        }
+        </style>
+    </head>
+    <body onload="getContent()">
+        <header>
+            <h1>Displaying Width and Height of Screen</h1>
+        </header>
+        <br>
+        <div class="content">
+            <br>
+            <button onclick="getContent()">Click to get Size</button><br><br>
+            <h2 id="width"></h2>
+            <h2 id="height"></h2>
+        </div>
+        <script>
+            function getContent(){
+               var w = window.innerWidth;
+                var h = window.innerHeight;
+                document.getElementById("width").innerHTML = "Screen Width : " + window.innerWidth + " px";
+                document.getElementById("height").innerHTML = "Screen Height : " + window.innerHeight + " px"; 
+
+            }         
+        </script>
+    </body>
+</html>
