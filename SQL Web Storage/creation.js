@@ -9,7 +9,7 @@ function save() {
       tx.executeSql("CREATE TABLE EMP(emp_name text,emp_id text,department text,salary text,address text)", [],
         function (tx) {
           alert("EMP Table created");
-        });
+        });  
     });
 
     db.transaction(function (tx) {

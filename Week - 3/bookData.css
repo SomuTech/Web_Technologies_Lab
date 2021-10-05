@@ -1,0 +1,8 @@
+.main{
+    display: flex;
+    margin-left: 5%;
+}
+#details,#more-details{
+    padding: 5px;
+    margin-left: 5%;
+}
