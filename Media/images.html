@@ -4,34 +4,56 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Responsive Images</title>
         <style>
+            *{
+                box-sizing: border-box;
+            }
             body{
                 margin: 0 5% 5% 5%;
                 background-color: aliceblue;
             }
             header{
+                font-size: 1.2vw;
+                text-shadow: 0 12px 2px #ccc;
+                color: rgb(240, 24, 24);
+                background-color: rgb(213, 229, 245);
                 text-align: center;
+                padding: 4px;
                 font-family: Arial, Helvetica, sans-serif;
             }
+            .content{
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0 4px;
+            }
         .images{
-            padding: 15px;
-            float: left;
-            width: 20%;
-            height: 20%;
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
         }
         #img{
-            border: 2px solid gray;
-            box-shadow: 2px 6px 6px #ddd;
+            box-shadow: 0 2px 4px  ;
+            width: 100%;
+            vertical-align: middle;
+            border: 1px solid silver;
         }
-        @media screen and (max-width: 992px){
+        @media screen and (max-width: 800px) {
             .images {
-              width: 50%;
+              flex: 50%;
+              max-width: 50%;
+            }
+          }
+         @media screen and (max-width: 600px) {
+            .images {
+              flex: 100%;
+              max-width: 100%;
             }
         }
-        @media screen and (max-width: 600px){
+      /*  @media screen and (min-height: 500px) {
             .images {
-                width: 100%;
+              flex: 50%;
+              max-height: 50%;
             }
-        }
+          }*/
         </style>
     </head>
     <body>
@@ -40,16 +62,28 @@
         </header>
         <div class="content">
             <div class="images">
-                <img id="img" src="img/img-1.jfif" width="250" height="250">
+                <img id="img" src="img/img-1.jfif">
+                <img id="img" src="img/img-2.jfif">
+                <img id="img" src="img/img-15.jfif">
+                <img id="img" src="img/img-4.jfif">
             </div>
             <div class="images">
-                <img id="img" src="img/img-2.jfif" width="250px" height="250px">
+                <img id="img" src="img/img-5.jfif">
+                <img id="img" src="img/img-6.jfif">
+                <img id="img" src="img/img-7.jfif">
+                <img id="img" src="img/img-8.jfif">
             </div>
             <div class="images">
-                <img id="img" src="img/img-5.jfif" width="250px" height="250px">
+                <img id="img" src="img/img-9.jfif">
+                <img id="img" src="img/img-10.jfif">
+                <img id="img" src="img/img-17.jfif">
+                <img id="img" src="img/img-12.jfif">
             </div>
             <div class="images">
-                <img id="img" src="img/img-4.jfif" width="250px" height="250px">
+                <img id="img" src="img/img-13.jfif">
+                <img id="img" src="img/img-14.jfif">
+                <img id="img" src="img/img-15.jfif">
+                <img id="img" src="img/img-16.jfif">
             </div>
         </div>
     </body>

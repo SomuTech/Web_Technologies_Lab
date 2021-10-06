@@ -1,49 +1,69 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
         <title>Display</title>
         <style>
             body{
+                margin: 5% 5% 5% 5%;
                 background-color: antiquewhite;
             }
+            #width, #height{
+                color: blue;
+            }
+            #width, #height,h2{
+               font-size: 2vw;
+            }
+
             header{
+                font-size: 1.5vw;
                 text-align: center;
-                color:blue;
+                color:rgb(255, 94, 0);
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             }
         .content{
             margin-left: 25%;
             text-align: center;
             width: 50%;
-            height: auto;
-            border: solid black 1px;
-            background-color: rgb(245, 234, 219);
+            border: solid rgb(145, 142, 142) 5px;
+            border-radius: 30px;
+            background-color: rgb(241, 237, 231);
             font-family: 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
         }
-        @media screen{
-            /* */
+
+        @media screen and (max-width:500px){
+            .content{
+                background-color:rgb(228, 146, 22);
+            }
+        }
+        @media screen and (max-width:500px) and (max-height:600px){
+            .content{
+                background-color:rgba(120, 113, 102, 0.768);
+            }
         }
         </style>
     </head>
-    <body onload="getContent()">
+    <body>
         <header>
             <h1>Displaying Width and Height of Screen</h1>
         </header>
         <br>
         <div class="content">
             <br>
-            <button onclick="getContent()">Click to get Size</button><br><br>
-            <h2 id="width"></h2>
-            <h2 id="height"></h2>
+            <h2> Screen Width: <span id="width"></span> px</h2>
+            <h2> Screen Height: <span id="height"></span> px</h2>
         </div>
-        <script>
-            function getContent(){
-               var w = window.innerWidth;
-                var h = window.innerHeight;
-                document.getElementById("width").innerHTML = "Screen Width : " + window.innerWidth + " px";
-                document.getElementById("height").innerHTML = "Screen Height : " + window.innerHeight + " px"; 
 
-            }         
+        <script>
+            window.onload = getContent;   
+
+            function getContent(){
+                document.getElementById("width").innerHTML =  window.innerWidth;
+                document.getElementById("height").innerHTML = window.innerHeight; 
+            } 
+
+            window.onresize = getContent;
         </script>
     </body>
 </html>
