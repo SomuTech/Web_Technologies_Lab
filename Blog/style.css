@@ -1,0 +1,32 @@
+/* *{
+  background-color:rgb(241, 241, 241)
+} */
+.nav {
+  display: flex;
+  text-align: justify;
+  }
+  .nav-item:hover {
+    color: blue;
+    cursor: pointer;
+  }
+  .nav-item-selected {
+    color: antiquewhite;
+  }
+  .nav-item {
+    padding: 2rem;
+    height: 100%;
+    font-size: 1rem;
+    color: rgb(46, 45, 45);
+    font-family: roboto, arial, sans-serif;
+  }
+.main-content{
+  width: 100%;
+  height: 100vh;
+  background: url("/Blog/img/bg-img.jpg") top right no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.bg-content{
+  border: 2px;
+  margin-left: 20%;
+}
