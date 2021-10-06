@@ -7,7 +7,25 @@
             body{
                 background-color: antiquewhite;
             }
-            @media screen and (min-width:400px) and (min-height: 600px){
+
+            @media screen and (max-width:900px){
+                body{
+                    background-color: black;
+                }
+            }
+
+            @media screen and (max-width:800px){
+                body{
+                    background-color: yellow;
+                }
+                h2:hover{
+                    color: blue;
+                }
+                p{
+                    color: green;
+                }
+            }
+            @media screen and (max-width: 600px){
                 body{
                     background-color:red;
                 }
@@ -19,9 +37,9 @@
                 }
             }
 
-            @media screen and (min-width:900px){
+            @media screen and (max-width:500px) {
                 body{
-                    background-color: yellow;
+                    background-color: purple;
                 }
                 h2:hover{
                     color: blue;
@@ -30,17 +48,33 @@
                     color: green;
                 }
             }
+
+            @media all {
+                body{
+                   color: black;
+                }
+            }
+
             @media print{
                body{
                    background-color: white;
                    color: black;
                }
             }
+            @media print{
+                body{
+                    background-color: white;
+                    color: black;
+                }
+             }
         </style>
     </head>
     <body>
         <h1>SomuTech</h1>
         <p>Web Technologies</p>
         <h2>Front End Development</h2>
+        <div>
+
+        </div>
     </body>
 </html>
