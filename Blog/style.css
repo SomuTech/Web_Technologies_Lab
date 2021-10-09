@@ -1,6 +1,7 @@
-/* *{
-  background-color:rgb(241, 241, 241)
-} */
+body{
+  background-color:rgb(230, 225, 225)
+}
+
 .nav {
   display: flex;
   text-align: justify;
@@ -19,14 +20,108 @@
     color: rgb(46, 45, 45);
     font-family: roboto, arial, sans-serif;
   }
-.main-content{
+  .main-content{
+    width: 100%;
+    height: 87vh;
+    background: url("/Blog/img/bg-img.jpg") top right no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .story {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    /* transform: translate(-50%, -50%); */
+  }
+  .story > h1{
+    font-size: 4.5vw;
+    font-family:cursive;
+    color: rgb(76, 75, 75);
+  }
+
+.body-content, .description{
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+}
+.about, .description{
+  color: blue;
+  font-size: 3vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+.about > .content{
+  display: flex;
+}
+.blog-img{
+  margin-top: 20%;
+}
+ .content-text{
+   margin-left: -5%;
+  border: 2px solid rgb(123, 71, 71);
+  height: 500px;
   width: 100%;
-  height: 100vh;
-  background: url("/Blog/img/bg-img.jpg") top right no-repeat;
-  background-size: cover;
-  position: relative;
+  font-size: 1.2vw;
 }
-.bg-content{
-  border: 2px;
-  margin-left: 20%;
+hr{
+  width:25%;  
+  text-align:center; 
+  color:blueviolet;
 }
+
+
+.c{
+  border: 1px solid black;
+  width: auto;
+  height: 1500px;
+}
+
+footer{
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+  }
+  .contact{
+    color: blue;
+    font-size: 2.2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+  }
+  .content-form{
+    text-align: left;
+  }
+  .form-cont{
+    display: flex;
+  }
+  .col-3{
+    margin-top: -5%;
+  }
+  .col-3 label{
+    font-size: 1vw;
+    color: rgb(59, 59, 59);
+  }
+  .col-3 #submit-btn{
+    padding: 10px;
+    font-size: 1.6vw;
+    width: 60%;
+    background-color:#FD8369;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    color: white;
+  }
+
+  .form{
+    border: none; 
+    background-color:rgb(230, 225, 225);
+    text-decoration-line: underline;
+    text-decoration-color: rgb(176, 177, 177);
+    padding: 3px 3px 3px 0px;
+    font-size: 2vw;
+    color: rgb(15, 128, 228);
+  }
+
+  .end{
+    color: rgb(71, 70, 70);
+    font-size: 0.6em;
+  }

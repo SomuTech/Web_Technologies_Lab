@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>MyBlog</title>
         <meta name="viewport" content="width=device-width initial-scale=1">
         <link rel="stylesheet" href="/Blog/style.css">
     </head>
     <body>
+        <!-- header start -->
        <header>
         <nav class="nav">
             <div class="nav-item nav-item-selected">Home</div>
@@ -14,9 +16,9 @@
             <div class="nav-item">Work Sheets</div>
             <div class ="nav-item">Contact</div>
             <div class="nav-item">
-                <form class="form-inline" action="">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                    <button class="btn btn-success" type="submit">Search</button>
+                <form class="#" action="">
+                    <input class="#" type="text" placeholder="Search">
+                    <button class="#" type="submit">Search</button>
                   </form>
             </div>
             <div class="nav-item">
@@ -25,10 +27,73 @@
         </nav>
         <section class="main-content">
             <div class="bg-content">
-                <h1>Somasekhar</h1>
-                <h1>Web Developer</h1>
+                <div class="story">
+                    <h1>Somasekhar<br>Web Developer</h1>
+                </div>
             </div>
-          </section>
+        </section>
        </header>
+       <!-- header end -->
+
+       <!-- body start -->
+       <section class="body-content">
+        <div class="about">
+            <h1>About Me<br><hr color="gray"> </h1> 
+            <div class="content">
+                <div class="blog-img">
+                    <img src="/Media/img/img-4.jfif">
+                </div>
+                <div class="content-text">
+                    kwhsgdfdfhbejhdf <br>jhf aefjhe ejhbf 
+                </div>
+            </div>  
+        </div>
+       </section>
+
+       <section class="How-it-works">
+           <div class="c">
+           <div class ="description">
+                <h1>How It Works<br><hr color="gray"> </h1>
+            </div>
+        </div>
+
+       </section>
+        <!-- body end -->
+
+       <!-- footer start -->
+       <footer>
+            <div class="contact">
+                <h1>Contact Me<br><hr color="gray"> </h1> 
+                <div class="content">
+                    <div class="content-form">
+                        <form action="" class="form-cont">
+                            <div class="col-1">
+                                <input type="text" required placeholder="First Name" class="form"><br><br>
+                                <input type="tel" required placeholder="Phone" class="form">
+                            </div>
+                            <div class="col-2">
+                                <input type="text" required placeholder="Last Name" class="form"><br><br>
+                                <input type="email" required placeholder="Email Address" class="form">
+                            </div>
+                            <div class="col-3">
+                                <h4>Level of Study</h4>
+                                <input type="checkbox" name="level" value="Junior High" ><label>Junior High</label><br>
+                                <input type="checkbox" name="level" value="High School" ><label>High School</label><br>
+                                <input type="checkbox" name="level" value="College Application"><label>College Application</label><br><br>
+                                <input type="submit" value="Send" id="submit-btn">
+                            </div>
+                        </form>
+                        <br><br>
+                        <div class="col-4">
+                            <textarea type="text" name="Message" placeholder="Message.." rows="7" cols="30" required class="form"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="end">
+                    <p>@ 2021 by Somasekhar. <span> <a href="https://somutech.github.io/" target="_blank" style="color: rgb(71, 70, 70);;"> SomuTech</a></span></p>
+                </div>
+            </div>
+       </footer>
+       <!-- footer end -->
     </body>
 </html>
