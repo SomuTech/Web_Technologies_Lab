@@ -1,0 +1,58 @@
+.fonts>h1{
+    font-size: 2vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
+    font-weight: 300;
+    font-variant: small-caps;
+    font-style: italic;
+    text-align: center;
+    color: darkblue;
+    text-decoration:overline
+}
+.fonts{
+    font-size: 1.3vw;
+}
+.fonts>#h2{
+    font-variant: inherit;
+    color: rgb(238, 112, 9);
+}
+.fonts>#h3{
+    letter-spacing: 5px;
+    text-decoration:underline;
+    text-transform:lowercase;
+}
+.fonts>#h4{
+    background-color: burlywood;
+    padding: 15px;
+    color:rgb(16, 16, 193);
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow:  1px 4px rgb(22, 221, 52);
+}
+.text>p{
+    line-height: 50px;
+    word-spacing: 5px;
+    text-indent: 40px;
+}
+.borders{
+    border: 5px solid;
+    border-style: groove;
+    border-width: 50%;
+    border-color: cadetblue;
+    border-top-color: chartreuse;
+    border-bottom-color: blue;
+    border-collapse: collapse;
+    border-radius: 40px;
+}
+/* links */
+a:link {
+    color: red;
+    }
+    a:visited {
+    color: green;
+    }
+    a:hover {
+    color: hotpink;
+    }
+    a:active {
+    color: blue;
+    }
