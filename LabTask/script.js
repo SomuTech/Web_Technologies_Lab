@@ -51,15 +51,14 @@ var student = {
 };
 document.getElementById("student").innerHTML = "student " + student.name + " belongs to " + student.dept;
 //object creation -2
-var student1 = {
-    name: "Dhana",
-    id: "1595",
-    dept: "cse"
-};
+var student1 = {}
+    student1.name = "Dhana";
+    student1.id = "1595";
+    student1.dept = "cse";
 document.getElementById("student").innerHTML = "student " + student1.name + " belongs to " + student1.dept;
 //object creation - 3
 var student2 = new Object();
-student2.name = "Ganesh",
+    student2.name = "Ganesh",
     student2.id = "15B4",
     student2.dept = "ece"
 document.getElementById("student").innerHTML = "student " + student2.name + " belongs to " + student2.dept;
