@@ -23,3 +23,4 @@ function save() {
     else
       alert("Unable to open web sql database");
   }
+  98
