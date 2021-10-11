@@ -12,11 +12,11 @@
   <header>
     <nav class="nav">
       <div class="nav-item nav-item-selected">Home</div>
-      <div class="nav-item">About</div>
+      <div class="nav-item" onclick="document.getElementsById('about-content').scrollIntoView()">About</div>
       <div class="nav-item"><a href="tutoring.html"><span>Tutoring</span></a></div>
-      <div class="nav-item">FAQ</div>
+      <div class="nav-item"><a href="FAQ.html"><span>FAQ</span></a></div>
       <div class="nav-item">Work Sheets</div>
-      <div class="nav-item">Contact</div>
+      <div class="nav-item" onclick="document.getElementById('footer-contact').scrollIntoView()">Contact</div>
       <div class="nav-item">
         <form class="#" action="">
           <input class="#" type="text" placeholder="Search" />
@@ -38,15 +38,15 @@
   <!-- header end -->
 
   <!-- body start -->
-  <section class="body-content">
-    <div class="about">
+  <section class="body-content" >
+    <div id="about-content" class="about">
       <h1>
         About Me<br />
         <hr color="gray" />
       </h1>
       <div class="content">
         <div class="blog-img">
-          <img src="/Blog/img/somu-img.jpg" />
+          <img src="/Blog/img/somu.jpg" />
         </div>
         <div class="content-text">
           I am a person who is positive about every aspect of life. There are
@@ -139,7 +139,7 @@
   <!-- body end -->
 
   <!-- footer start -->
-  <footer>
+  <footer id="footer-contact"
     <div class="contact">
       <h1>
         Contact Me<br />
@@ -167,8 +167,7 @@
           </form>
           <br /><br />
           <div class="col-4">
-            <textarea type="text" name="Message" placeholder="Message.." rows="7" cols="30" required
-              class="form"></textarea>
+            <textarea type="text" name="Message" placeholder="Message.." rows="7" cols="30" required spellcheck="true" class="form"></textarea>
           </div>
         </div>
       </div>
