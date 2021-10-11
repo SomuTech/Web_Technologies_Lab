@@ -1,0 +1,54 @@
+h1 {
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  color: darkblue;
+}
+label {
+  font-size: larger;
+  font-weight: 800;
+}
+
+.item {
+  font-family: "Lucida Sans", "Lucida Sans Regular", Verdana, sans-serif;
+  font-size: 1.5em;
+  margin-left: 25%;
+  padding: 0.5rem;
+  border: 0.1rem solid white;
+  width: 50rem;
+  cursor: pointer;
+  /* display: none; */
+  background-color: rgb(245, 245, 245);
+}
+.item:hover {
+  background-color: white;
+  color: blue;
+}
+#search {
+  padding: 0.5rem;
+  border: 0.05rem solid #ddd;
+  margin-bottom: 1rem;
+  width: 25rem;
+}
+
+.answer > .content {
+  margin-left: 15%;
+  margin-right: 15%;
+  height: 30vw;
+  border: 1px solid white;
+  border-collapse: collapse;
+  background-color: rgb(245, 241, 241);
+}
+
+#btn-search {
+  color: white;
+  background-color: coral;
+  border-radius: 4px;
+  border: none;
+}
+
+#btn-search:hover {
+  background-color: #f3380e;
+}
