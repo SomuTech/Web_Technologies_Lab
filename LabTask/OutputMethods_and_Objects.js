@@ -1,7 +1,8 @@
-        //functions and checkboxes
+//functions and checkboxes
 document.write("<br> Document.write() method");
-document.getElementById("head").innerHTML = "Javascript Functions and Check Boxes";
+document.getElementById("head").innerText = "Javascript Functions and Check Boxes";
 document.getElementsByClassName("content").innerHTML = "content";
+console.log("console.log() to get output in console")
 
 function func1() {
     alert("function worked");
@@ -12,7 +13,6 @@ function func2() {
     document.getElementById("res").innerHTML = res;
 }
 
-        //js events
 function func3() {
     var res = confirm("Waiting for your response");
     if (res == true)
@@ -40,8 +40,7 @@ function show4() {
     document.getElementById("data").innerHTML = data.value;
 }
 
-
-        //js objects
+//js objects
 //object creation - 1
 var student = {
     name: "Somasekhar",
@@ -52,13 +51,13 @@ var student = {
 document.getElementById("student").innerHTML = "student " + student.name + " belongs to " + student.dept;
 //object creation -2
 var student1 = {}
-    student1.name = "Dhana";
-    student1.id = "1595";
-    student1.dept = "cse";
+student1.name = "Dhana";
+student1.id = "1595";
+student1.dept = "cse";
 document.getElementById("student").innerHTML = "student " + student1.name + " belongs to " + student1.dept;
 //object creation - 3
 var student2 = new Object();
-    student2.name = "Ganesh",
+student2.name = "Ganesh",
     student2.id = "15B4",
     student2.dept = "ece"
 document.getElementById("student").innerHTML = "student " + student2.name + " belongs to " + student2.dept;
@@ -72,3 +71,16 @@ var student = {
     }
 }
 document.getElementById("student").innerHTML = student.name();
+
+//objects containing inner objects
+var student = {
+    fname: "Somu",
+    lname: "Tech",
+    full_details: {
+        id: "1591",
+        dept: "csse"
+    }
+}
+console.log(student.full_details.id)
+document.getElementById("student").innerHTML = student.full_details.id();
+

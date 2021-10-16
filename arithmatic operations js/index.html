@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Arithmetic Operators</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>JavaScript Arithmetic Operations</h1>
+    <div>
+      Enter Number 1 :
+      <input type="number" id="num1" onkeyup="show()" /><br /><br />
+      Enter Number 2 :
+      <input type="number" id="num2" onkeyup="show()" /><br /><br />
+      Enter Operator(+, -, *, /, %) :
+      <input type="text" id="op" maxlength="1" onkeyup="show()" /><br /><br />
+      <br />
+      <h3>Solution: <span id="sol"></span></h3>
+    </div>
+    <h2 style="margin-left: 20%">OR</h2>
+    <div>
+      Enter Expression :
+      <input type="text" id="exp" onkeyup="results()" /><br /><br />
+      <h3>Solution: <span id="sol-exp"></span></h3>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
