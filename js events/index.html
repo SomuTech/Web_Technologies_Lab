@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Events</title>
+    <style></style>
+  </head>
+  <body onload="wind1()">
+    <h1>JS Mouse Events</h1>
+    <div onmousemove="function1()">
+      <h3 id="fun1">Mouse move here</h3>
+    </div>
+    <h3 id="fun1" onmousemove="function1()">Mouse move here</h3>
+    <br />
+    <h3 id="fun2" onmouseover="function2()">Mouse over here</h3>
+    <br />
+    <h3 id="fun3" onmouseleave="function3()">Mouse enter and leave here</h3>
+    <br />
+    <h3 id="fun4" onmouseout="function4()">Mouse out here</h3>
+    <br />
+    <h1>Form Events</h1>
+    <form onsubmit="form4()">
+      First Name:
+      <input type="text" id="fname" onfocus="form1()" /><br /><br />
+      Last Name:
+      <input type="text" id="lname" onblur="form2()" /><br /><br />
+      Roll Number:
+      <input type="text" id="id" onchange="form3()" /><br /><br />
+      <input type="submit" /><br /><br />
+    </form>
+    <br /><br />
+    <h1>Window Events</h1>
+    <div onload="wind1()">
+      <h3 id="win1">window event</h3>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
