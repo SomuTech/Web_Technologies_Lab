@@ -1,4 +1,5 @@
 //functions and checkboxes
+console.log("jhgsdg");
 document.write("<br> Document.write() method");
 document.getElementById("head").innerText = "Javascript Functions and Check Boxes";
 document.getElementsByClassName("content").innerHTML = "content";

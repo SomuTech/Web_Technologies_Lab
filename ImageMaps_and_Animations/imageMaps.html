@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Restaurant</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Restaurant Menu</h1>
+        </header>
+        <div class="content">
+            <div class="types">
+                <h4><b>Chinese Soup</b></h4>
+                <ol>
+                    <li onclick="showDetails(this)" data-available="Yes" data-offer="10%">Clear soup.............120</li>
+                    <li onclick="showDetails(this)" data-available="Yes" data-offer="30%">Hot & sour soup............140</li>
+                    <li onclick="showDetails(this)" data-available="No" data-offer="5%">Noodle soup...........110</li>
+                    <li onclick="showDetails(this)" data-available="Yes" data-offer="20%">Talumein soup...........170</li>
+                </ol>
+                <br>
+                <h4><b>Indian Shorbha</b></h4>
+                <ol>
+                    <li onclick="showDetails(this)" data-available="Yes" data-offer="10%">Murg shorba...........140</li>
+                    <li onclick="showDetails(this)" data-available="Yes" data-offer="20%">Palak shorba............200</li>
+                    <li onclick="showDetails(this)" data-available="No" data-offer="10%">Tomato shorba.........90</li>
+                    <li>
+                        <ol class="special">
+                            <h5>Special</h5>
+                            <li id="spe" onclick="showDetails(this)" data-available="No" data-offer="40%">chicken Biryani</li>
+                            <li id="spe" onclick="showDetails(this)" data-available="Yes" data-offer="10%">Leman Rice</li>
+                            <li id="spe" onclick="showDetails(this)" data-available="Yes" data-offer="50%">Tomato Rice</li>
+                        </ol>
+                    </li>
+                </ol>
+                <br>
+            
+                <h4><b>Continental soup</b></h4>
+                <ol>
+                    <li onclick="showDetails(this)" data-available="No" data-offer="10%">Cream of broccoli...........140</li>
+                    <li onclick="showDetails(this)" data-available="Yes" data-offer="6%">cream of chicken............200</li>
+                    <li onclick="showDetails(this)" data-available="Yes" data-offer="1%">cream of tomato.........90</li>
+                </ol>
+                <br>
+                <h4><b>Raita</b></h4>
+                <ol>
+                    <li onclick="showDetails(this)" data-available="Yes" data-offer="5%">Boodi raita...........140</li>
+                    <li onclick="showDetails(this)" data-available="Yes" data-offer="10%">Mix veg raita............200</li>
+                    <li onclick="showDetails(this)" data-available="No" data-offer="20%">plain curd.........60</li>
+                </ol>
+            </div>
+            <div class="images">
+                <div>
+                    <img id="img" src="img/img-1.jfif" usemap="#foodImg-1" style="margin-top: 30%;">
+                    <map name="foodImg-1">
+                        <area shape="rect" coords="40,20,120,80"  href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F1640777%2Fpexels-photo-1640777.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-ella-olsson-1640777.jpg%26fm%3Djpg&imgrefurl=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Ffood%2F&tbnid=-R54csAHk1XTPM&vet=12ahUKEwjbye-wu-LzAhUxjtgFHbw2BksQMygAegUIARDQAQ..i&docid=c1W1wgDZbrCp_M&w=4288&h=2859&q=food%20images&ved=2ahUKEwjbye-wu-LzAhUxjtgFHbw2BksQMygAegUIARDQAQ">
+                    </map>
+                </div>
+                <div>
+                    <img id="img" src="img/img.jfif" usemap ="#foodImg-2" style="margin-top: 25%; margin-right: 35%;">
+                    <map name="foodImg-2">
+                        <area shape="circle" coords="140,110,100"  href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Fhealthy-food-background-fruits-vegetables-cereal-nuts-superfood-dietary-balanced-vegetarian-eating-products-kitchen-143677456.jpg&imgrefurl=https%3A%2F%2Fwww.dreamstime.com%2Fphotos-images%2Ffood.html&tbnid=ziYmQF38NHqA4M&vet=12ahUKEwjbye-wu-LzAhUxjtgFHbw2BksQMygCegUIARDUAQ..i&docid=teNhXgqUnYRCrM&w=800&h=533&q=food%20images&ved=2ahUKEwjbye-wu-LzAhUxjtgFHbw2BksQMygCegUIARDUAQ">
+                    </map>
+                </div>
+                <div>
+                    <img id="img" src="img/img-2.jfif" usemap ="#foodImg-3" style="margin-top: 25%;">
+                    <map name="foodImg-3">
+                        <area shape="circle" coords="70,80,50"  href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Fhealthy-food-background-fruits-vegetables-cereal-nuts-superfood-dietary-balanced-vegetarian-eating-products-kitchen-143677456.jpg&imgrefurl=https%3A%2F%2Fwww.dreamstime.com%2Fphotos-images%2Ffood.html&tbnid=ziYmQF38NHqA4M&vet=12ahUKEwjbye-wu-LzAhUxjtgFHbw2BksQMygCegUIARDUAQ..i&docid=teNhXgqUnYRCrM&w=800&h=533&q=food%20images&ved=2ahUKEwjbye-wu-LzAhUxjtgFHbw2BksQMygCegUIARDUAQ">
+                        <area shape="circle" coords="200,120,55"  href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Fhealthy-food-background-fruits-vegetables-cereal-nuts-superfood-dietary-balanced-vegetarian-eating-products-kitchen-143677456.jpg&imgrefurl=https%3A%2F%2Fwww.dreamstime.com%2Fphotos-images%2Ffood.html&tbnid=ziYmQF38NHqA4M&vet=12ahUKEwjbye-wu-LzAhUxjtgFHbw2BksQMygCegUIARDUAQ..i&docid=teNhXgqUnYRCrM&w=800&h=533&q=food%20images&ved=2ahUKEwjbye-wu-LzAhUxjtgFHbw2BksQMygCegUIARDUAQ">
+                        <area shape="poly" coords="200,40,210,22,220,24,130,30,240,52"  href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Fhealthy-food-background-fruits-vegetables-cereal-nuts-superfood-dietary-balanced-vegetarian-eating-products-kitchen-143677456.jpg&imgrefurl=https%3A%2F%2Fwww.dreamstime.com%2Fphotos-images%2Ffood.html&tbnid=ziYmQF38NHqA4M&vet=12ahUKEwjbye-wu-LzAhUxjtgFHbw2BksQMygCegUIARDUAQ..i&docid=teNhXgqUnYRCrM&w=800&h=533&q=food%20images&ved=2ahUKEwjbye-wu-LzAhUxjtgFHbw2BksQMygCegUIARDUAQ">
+                    </map>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <footer>
+                <h1>Good Food- Good Taste- Good Mood...!</h1>
+                <br><br><br>
+        </footer>
+
+        <script>
+            function showDetails(items) {
+                var available = items.getAttribute("data-available");
+                var offer = items.getAttribute("data-offer");
+                alert( "Available - " + available + "\nOffer - " + offer);
+            }
+        </script>
+        
+    </body>
+</html>
