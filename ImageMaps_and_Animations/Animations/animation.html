@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+    #ball {
+      margin-top: 5%;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      position: absolute;
+      background-color: red;
+    }
+  </style>
+</head>
+  <body>
+    <div class="container">
+      <div id="ball"></div>
+    </div>
+
+    <script>
+      document.onmousemove = function(e){
+          let x = e.clientX;
+          let y = e.clientY;
+          document.getElementById("ball").style.marginLeft = x+"px";
+          document.getElementById("ball").style.marginRight = y+"px";
+      }
+    </script>
+  </body>
+</html>

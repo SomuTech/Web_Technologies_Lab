@@ -1,0 +1,66 @@
+body{
+    margin-left: 15%;
+    margin-right: 15%;
+    background-image: url(img/—Pngtree—menu\ background\ image_1191502.jpg);
+    background-size: 65% 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',sans-serif;
+    color: white;
+
+}
+.content{
+    display: flex;
+}
+.types,.images{
+    margin-top: 10%;
+    padding: 100px;
+    width: 30%;
+}
+h1{
+    text-shadow: 10px 5px 6px #ccc;
+    padding: 10px;
+    text-align: center;
+    margin-top: -10px;
+}
+h4{
+    background-color: red;
+    padding: 10px;
+    width: 40%;
+    border-radius: 15px;
+    text-shadow: 10px 10px 10px rgb(95, 91, 91);
+}
+ul{
+    text-decoration: line-through;
+}
+li{
+    padding: 5px;
+    color: black;
+}
+
+li:hover{
+    color: blue;
+    cursor: pointer;
+}
+#spe:hover {
+    color:red;
+    cursor:pointer
+}
+.type-1,.type-2{
+
+    margin-left: 5%;
+    border: 1px solid red;
+    padding: 5px;
+}
+.images{
+    text-align: right;
+}
+#img{
+    border-radius: 10px;
+    box-shadow: 10px 6px 6px #ccc;
+}
+footer > h1{
+    text-align: center;
+    color: blue;
+    text-shadow: 10px 5px 6px rgb(41, 41, 240);
+}
