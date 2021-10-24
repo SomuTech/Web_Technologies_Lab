@@ -15,6 +15,7 @@ function function4() {
 }
 
 
+
 //form events
 function form1() {
     document.getElementById("fname").style.background = "red";
