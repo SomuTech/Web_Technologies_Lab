@@ -1,55 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <title>JQuery</title>
-        <style>
-            #content{
-                border: 1px solid black;
-                background-color: antiquewhite;
-                text-align: center;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="heading">
-            <h1>JQuery Example</h1>
-        </div>
-        <p>The purpose of jQuery is to make it much easier to use JavaScript on your website.</p>
-        <h3 onmouseover="change()" onmouseleave="original()">This may change if you touch</h3>
-        <div class="JQtext">
-            <h4>The purpose of jQuery is to make it much easier to use JavaScript on your website.</h4>
-        </div>     
-        <div class="code">
-            <pre>
-                <code>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>JQuery</title>
+    <style>
+        #content {
+            border: 1px solid black;
+            background-color: antiquewhite;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="heading">
+        <h1>JQuery Example</h1>
+    </div>
+    <p>
+        The purpose of jQuery is to make it much easier to use JavaScript on your
+        website.
+    </p>
+    <h3 onmouseover="change()" onmouseleave="original()">
+        This may change if you touch
+    </h3>
+    <div class="JQtext">
+        <h4>
+            The purpose of jQuery is to make it much easier to use JavaScript on
+            your website.
+        </h4>
+    </div>
+    <div class="code">
+        <pre>
+            <code>
                     JQuery Syntax
 
                     $(selector).action()
 
                     example: 
                         $("h1").hide();
-                </code>
-            </pre>
-        </div>   
-        <script>
-            $("p").hide();
+            </code>
+        </pre>
+    </div>
+    <script>
+        $("p").hide();
 
-            $("h3").css("background-color","red");
-            $("#heading").css("background-color","azure");
-            $("#heading h1").append("By SS");
+        $("h3").css("background-color", "red");
+        $("#heading").css("background-color", "azure");
+        $("#heading h1").append("By SS");
 
-             $(".JQtext").css("color","white");
-             $(".JQtext h4").css("background-color","black");
-            $(".code pre").css({"border":"1px solid black"});
+        $(".JQtext").css("color", "white");
+        $(".JQtext h4").css("background-color", "black");
+        $(".code pre").css({ "border": "1px solid black" });
 
-            function change(){
-                $("h3").css({"background-color":"green","color":"red"});
-            }
-            function original(){
-                $("h3").css({"background-color":"red","color":"green"});
-                
-            }
-        </script>
-    </body>
+        function change() {
+            $("h3").css({ "background-color": "green", color: "red" });
+        }
+        function original() {
+            $("h3").css({ "background-color": "red", color: "green" });
+        }
+    </script>
+</body>
+
 </html>
