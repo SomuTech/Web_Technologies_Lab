@@ -14,7 +14,7 @@
 
 <body>
     <div id="heading">
-        <h1>Welcome To</h1>
+        <h1>Welcome To </h1>
     </div>
     <p>
         <input type="text" id="sometext">
@@ -59,13 +59,13 @@
         $("#sometext").keypress(function(){
             $(this).css("color","blue");
         })
-        $("sometext").focus(function(){
+        $("#sometext").focus(function(){
             $(this).css("background-color","gray");
-        })
+        });
 
         $("h1").load(function(){
-            $(this).append(" JQuery");
-        })
+            $(this).append("JQuery");
+        });
     </script>
 <!--  -->
 </body>
