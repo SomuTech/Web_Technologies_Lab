@@ -10,13 +10,28 @@
       position: absolute;
       background-color: red;
     }
+    #para{
+      animation-name: example;
+      position: relative;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    @keyframes example {
+      0%   {left:0px; top:0px;}
+      25%  {left:200px; top:0px;}
+      50%  {left:400px; top:0px;}
+      75%  { left:600px; top:0px;}
+      100% {left:600px; top:0px;}
+      
+    }
   </style>
 </head>
   <body>
+    <p id="para">content goes here.......</p>
     <div class="container">
       <div id="ball"></div>
     </div>
-
     <script>
       document.onmousemove = function(e){
           let x = e.clientX;
@@ -24,6 +39,9 @@
           document.getElementById("ball").style.marginLeft = x+"px";
           document.getElementById("ball").style.marginRight = y+"px";
       }
+
     </script>
   </body>
 </html>
+
+
