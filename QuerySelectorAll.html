@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+
+<head>
+    <Title>working with queryselecionall</TITLE>
+</HEAD>
+
+<BODY>
+    <H1>working with the selectionAll</H1>
+    <FORM id="myform">
+        <B>selct your favourite flowers:</B><BR />
+        <INPUT name="flowers" type="checkbox" value="rose" />rose <BR />
+        <INPUT name="flowers" type="checkbox" value="lilly" />lilly<BR />
+        <INPUT name="flowers" type="checkbox" value="jasmine" />jasmine<BR />
+        <INPUT type="submit" />
+    </FORM>
+    <SCRIPT type="text/javascript">
+        if (document.querySelector) {
+            document.querySelector('#myform').onsubmit = function () {
+                var checkflowers = this.querySelectorAll('input[name="flowers"]:checked')
+                document.write("<B>you have selected the following flowers:</B ></BR > ")
+        for (var i = 0; i < checkflowers.length; i++) {
+                    var value = "" + value + checkflowers[i].value+ "<BR/>"
+                    document.write("<LI>" + value + "<Li/>")
+                }
+                return false
+            }
+        }
+    </SCRIPT>
+</BODY>
+
+</HTML>

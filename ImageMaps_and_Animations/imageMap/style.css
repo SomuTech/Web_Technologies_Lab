@@ -9,6 +9,12 @@ body{
     color: white;
 
 }
+#con-hi{
+    display: none;
+}
+#rec:hover{
+    display: contents;
+}
 .content{
     display: flex;
 }
