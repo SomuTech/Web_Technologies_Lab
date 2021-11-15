@@ -1,22 +1,43 @@
 function validateForm()
 {
-    var fname = document.getElementById("fname").value;
     var exp = /^[A-Za-z]+$/; 
-    if(fname==null || fname==" ")
+    if(form.fname.value==null || form.fname.value==" ")
         alert("First Name can't be Empty!");
-    else if(! fname.match(exp))
+    else if(! form.fname.value.match(exp))
         alert("First Name must be in Alphabets");
 
-    var lname = document.getElementById("lname").value;
-    if(lname==null || lname==" ")
+    if(form.lname.value==null || form.lname.value==" ")
         alert("Lat Name can't be Empty!");
-    else if(! lname.match(exp))
+    else if(! form.lname.value.match(exp))
         alert("Last Name must be in Alphabets");
 
-    var username = document.getElementById("username").value;
     var exp = /^[A-Za-z0-9_]+$/; 
-    if(username==null || username==" ")
+    if(form.username.value==null || form.username.value==" ")
         alert("Username can't be Empty!");
-    else if(! username.match(exp))
+    else if(! form.username.value.match(exp))
         alert("UserName should be in Alphabets, Numbers and _");
+
+            //password validation
+    if(form.psd1.value != "" && form.psd1.value == form.psd2.value) {
+        const exp = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()+=-\?;,./{}|\":<>\[\]\\\' ~_]).{8,}/
+        if(!exp.test(form.psd1.value)){
+            alert("password must be a minimum of 8 characters including number, Upper, Lower And one special character");
+            return false;
+        }
+    }
+    else{
+        alert("Error: Please check that you've entered and confirmed your password!");
+        form.pwd1.focus();
+        return false;
+    }
+            //end
+    if(form.pcode.value.length !=6){
+        alert("pincode must be 6 digits");
+        return false;
+    }
+
+    if(form.mobile.value.length !=10){
+        alert("mobile number must be 10 digits");
+        return false;
+    }
 }
