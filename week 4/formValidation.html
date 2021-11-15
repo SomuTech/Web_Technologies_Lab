@@ -1,61 +1,65 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <script src="script.js"></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0 shrink-to-fit=no" />
-    <title>Educational Details</title>
-  </head>
+<html lang="en">
 
-  <body style="margin-left: 5%; margin-right: 25%">
-    <p style="font-size: 25px; font-weight: bold; font-family: Arial">
-      Fill the following details
-    </p>
-    <p style="color: red">* fields are mandatory</p>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
 
-    <form onsubmit="validateForm()">
-      <fieldset style="border: 5px silver solid">
-        <legend style="color: cadetblue">Educational Details</legend>
-        <label for="fname">First Name: </label>
-        <input type="text" id="fname" placeholder="enter first name" required maxlength="8" />
-        <br /><br />
-        <label for="lname">Last Name: </label>
-        <input type="text" id="lname" placeholder="enter last name" required maxlength="8"/>
-        <br /><br />
-        <label for="username">User Name* : </label>
-        <input type="text" id="username" placeholder="enter username" required />
-        <br /><br />
-        <!--
-        <label for="rollnumber">Roll Number* : </label>
-        <input type="text" id="rollnumber" placeholder="roll number" required /><br /><br />
-        <label for="password">Password: </label>
-              <input type="password" id="password" name="password" placeholder="enter password" required><br><br>
-              <label for="Cpassword">Conform Password: </label>
-              <input type="password" id="Cpassword" name="password" placeholder="enter password again" required><br><br> 
-        <label for="college">College Name* : </label>
-        <input type="text" id="college" placeholder="enter college name" required />
-        <br /><br />
-        
-
-        <label for="marks">Enter Marks* :</label>
-        <input type="number" id="marks" name="marks" placeholder="marks " /><br /><br />
-        <label for="phone">Mobile Number: </label>
-        <input type="text" id="phone" name="phone" placeholder="enter mobile number" /><br /><br />
-        <label for="email">Email Address: </label>
-        <input type="email" id="email" name="email" placeholder="enter email address" required /><br /><br /> -->
-        <input type="reset" style="
-              background-color: rgb(95, 100, 160);
-              color: white;
-              cursor: pointer;
-              margin-left: 15%;
-            " />
-        <input type="submit" style="
-              background-color: rgb(95, 100, 160);
-              color: white;
-              cursor: pointer;
-              margin-left: 15%;
-            " />
+<body style="width: 50%; margin-left:25%">
+  <div class="container">
+    <strong>Fill the following details</strong>
+    <p style="color: red;">* fields are mandatory</p>
+    <form name="form" onsubmit="validateForm()">
+      <fieldset style="border: 1px solid silver; padding: 1rem">
+        <legend>Educational Details</legend>
+        <div class="form-group">
+          <label for="fname">First Name: </label>
+          <input type="text" class="form-control" id="fname" placeholder="enter first name" required maxlength="8" />
+          <label for="lname">Last Name: </label>
+          <input type="text" class="form-control" id="lname" placeholder="enter last name" required maxlength="8" />
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="username">User Name* : </label>
+          <input type="text" class="form-control" id="username" placeholder="enter username" required />
+          <label for="email">Email Address: </label>
+          <input type="email" class="form-control" id="email" placeholder="enter email address" required />
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="psd1">Password: </label>
+          <input type="password" class="form-control" id="psd1" placeholder="enter password">
+          <label for="psd2">Conform Password: </label>
+          <input type="password" class="form-control" id="psd2" placeholder="enter password again">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="date">Enter Date: </label>
+          <input type="date" class="form-control" id="date" name="date" placeholder="date" required />
+        </div>
+        <div class="form-group">
+          <label for="pcode">Enter Pincode Number: </label>
+          <input type="number" class="form-control" id="pcode" placeholder="pin code" maxlength="6" required />
+          <label for="mobile">Enter Phone Number: </label>
+          <input type="tel" class="form-control" id="mobile" placeholder="mobile number" required />
+        </div>
+        <br>
+        <div class="button">
+          <button type="reset" class="btn btn-secondary">Reset</button>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
       </fieldset>
     </form>
-  </body>
+    <br>
+  </div>
+</body>
 </html>
