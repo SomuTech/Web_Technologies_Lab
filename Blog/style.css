@@ -1,39 +1,29 @@
-body {
-  background-color: rgb(230, 225, 225);
+.container-fluid{
+  background-color: #F8F9FA;
+  box-sizing: border-box;
+
+}
+.main-content #bgimage{
+  background-image: url('/Blog/img/bg-img.jpg');
+  background-repeat: no-repeat;
+  opacity: 55%;
+  background-size: 100%;
+  height: 100vh;
+}
+.main-content #bgimage h1,p{
+  color: black;
+  font-weight: bold;
 }
 
-.nav {
-  display: flex;
-  text-align: justify;
-}
-.nav-item:hover,
 a:hover {
   color: blue;
   cursor: pointer;
-}
-.nav-item-selected {
-  color: rgb(240, 148, 28);
 }
 a {
   text-decoration: none;
 }
 a:active {
   color: rgb(226, 22, 22);
-}
-.nav-item {
-  padding: 2rem;
-  height: 100%;
-  font-size: 1.3rem;
-  color: rgb(46, 45, 45);
-  font-family: roboto, arial, sans-serif;
-}
-.main-content {
-  width: 100%;
-  height: 88vh;
-  background: url("/Blog/img/bg-img.jpg") top right no-repeat;
-  background-size: cover;
-  position: relative;
-  /* image-orientation: 10grad; */
 }
 
 .story {
@@ -49,11 +39,21 @@ a:active {
 
 .body-content,
 .description {
-  margin-left: 15%;
-  margin-right: 15%;
   text-align: center;
+  margin-left: 8%;
+  margin-right: 8%;
 }
-
+.content-sub{
+  margin-left: 8%;
+  margin-right: 8%;
+}
+.content-sub h1{
+  color: rgb(218, 140, 37);
+}
+.content-sub li{
+  color: rgb(11, 25, 25);
+  text-indent: 15px;
+}
 .about,
 .description {
   color: blue;
@@ -67,12 +67,12 @@ a:active {
   position: static;
 }
 .blog-img {
-  margin-top: 7%;
+  margin-top: 2%;
 }
 .blog-img img {
   width: 26vw;
   border-radius: 35px;
-  box-shadow: 0px 0px 12px 12px white;
+  box-shadow: 4px 4px 12px 12px white;
 }
 .content-text {
   margin-left: -5%;

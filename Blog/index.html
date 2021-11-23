@@ -1,49 +1,70 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>MyBlog</title>
-  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Blog</title>
   <link rel="stylesheet" href="/Blog/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <!-- header start -->
-  <header>
-    <nav class="nav">
-      <div class="nav-item nav-item-selected">Home</div>
-      <div class="nav-item" onclick="document.getElementsById('about-content').scrollIntoView()">About</div>
-      <div class="nav-item"><a href="tutoring.html"><span>Tutoring</span></a></div>
-      <div class="nav-item"><a href="FAQ.html"><span>FAQ</span></a></div>
-      <div class="nav-item">Work Sheets</div>
-      <div class="nav-item" onclick="document.getElementById('footer-contact').scrollIntoView()">Contact</div>
-      <div class="nav-item">
-        <form class="#" action="">
-          <input class="#" type="text" placeholder="Search" />
-          <button class="#" type="submit">Search</button>
-        </form>
-      </div>
-      <div class="nav-item">
-        <!-- <img src="/Blog/img/logo.jfif" width="70px" height="50x" style="text-align: right; margin-left:100%"> -->
-      </div>
-    </nav>
-    <section class="main-content">
-      <div class="bg-content">
-        <div class="story">
-          <h1>Somasekhar<br />Developer</h1>
+  <div class="container-fluid">
+    <!-- header start -->
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo04">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-brand" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-brand" href="tutoring.html">Tutoring</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-brand" href="FAQ.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="document.getElementById('footer-contact').scrollIntoView()">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo04" aria-controls="navbarTogglerDemo04" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
-      </div>
-    </section>
-  </header>
+      </nav>
+      <br><br>
+      <section class="main-content">
+        <div  id="bgimage" class="d-flex flex-column justify-content-center align-items-center">
+            <h1>Somasekhar</h1>
+            <p>I'm <span class="typed" data-typed-items="Designer, Developer,Dreamer,Programmer"></span></p>
+        </div>
+      </section>
+    </header>
   <!-- header end -->
 
-
+    <br><br>
   <!-- body start -->
-  <section class="body-content" >
+  <section class="body-content">
     <div id="about-content" class="about">
-      <h1>
-        About Me<br />
-        <hr color="gray" />
-      </h1>
+      <h1>About Me</h1>
       <div class="content">
         <div class="blog-img">
           <img src="/Blog/img/somu.jpg" />
@@ -68,56 +89,43 @@
       </div>
     </div>
   </section>
-
+    <br><br><br>
   <section class="How-it-works">
-    <div class="cont-2">
       <div class="description">
-        <h1>
-          How It Works<br />
-          <hr color="gray" />
-        </h1>
+        <h1>How It Works</h1>
       </div>
-      <div class="box-content">
-        <table>
-          <tr>
-            <td>
-              <div class="box">
-                <h1>Subjects</h1>
-                <p>
-                  Subjects related Computer Science and Programming. latest
-                  content provided.<br />
-                  Database Management Systems<br />
-                  Python<br />
-                  Computer Networks<br />
-                  Operating Systems<br />
-                  etc,.
-                </p>
+      <div class="content-sub p-3 mb-2 bg-white text-dark">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+            <h1>Subjects</h1>
+                  <h5>Subjects related to Computer Science and Programming. latest content provided.</h5>
+                    <li>Database Management Systems</li>
+                    <li>Python</li>
+                    <li>Computer Networks</li>
+                    <li>Operating Systems</li>
+                    <li>etc..</li>
+                  </p>
               </div>
-            </td>
-            <td>
-              <div class="box">
-                <h1>Tutoring Options</h1>
-                <p>
-                  Online One on One Lessons: Which are best and prescribed.
-                  students gets better understanding and knowledge<br /><br />
-                  Rate: $45/hr
-                </p>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="box">
+              <div class="row">
                 <h1>Levels of Teaching</h1>
-                <p style="text-align: center">
-                  Junior High<br />
-                  High School<br />
-                  College Applications
-                </p>
+                  <p>
+                    Junior High<br />
+                    High School<br />
+                    College Applications
+                  </p>
               </div>
-            </td>
-            <td>
-              <div class="box">
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+            <h1>Tutoring Options</h1>
+                  <p>
+                    Online One on One Lessons: Which are best and prescribed.
+                    students gets better understanding and knowledge<br /><br />
+                    Rate: $45/hr
+                  </p>
+              </div>
+              <div class="row">
                 <p>
                   Online Group Sessions: These are timed sessions students.
                   knowledge provided here is less and complete sources are
@@ -125,13 +133,11 @@
                   Rate: $35/hr
                 </p>
               </div>
-            </td>
-          </tr>
-        </table>
+        </div>
       </div>
       <br /><br />
       <div style="text-align: center">
-        <input type="submit" value="Read More" id="submit-btn" style="width:20%"/>
+        <input type="submit" value="Read More" id="submit-btn" style="width:20%" />
       </div>
     </div>
   </section>
@@ -139,49 +145,49 @@
   <!-- body end -->
 
   <!-- footer start -->
-  <footer id="footer-contact"
-    <div class="contact">
-      <h1>
-        Contact Me<br />
-        <hr color="gray" />
-      </h1>
-      <div class="content">
-        <div class="content-form">
-          <form action="" class="form-cont">
-            <div class="col-1">
-              <input type="text" required placeholder="First Name" class="form" /><br /><br />
-              <input type="tel" required placeholder="Phone" class="form" />
-            </div>
-            <div class="col-2">
-              <input type="text" required placeholder="Last Name" class="form" /><br /><br />
-              <input type="email" required placeholder="Email Address" class="form" />
-            </div>
-            <div class="col-3">
-              <h4>Level of Study</h4>
-              <input type="checkbox" name="level" value="Junior High" /><label>Junior High</label><br />
-              <input type="checkbox" name="level" value="High School" /><label>High School</label><br />
-              <input type="checkbox" name="level" value="College Application" /><label>College
-                Application</label><br /><br />
-              <input type="submit" value="Send" id="submit-btn" />
-            </div>
-          </form>
-          <br /><br />
-          <div class="col-4">
-            <textarea type="text" name="Message" placeholder="Message.." rows="7" cols="30" required spellcheck="true" class="form"></textarea>
+  <br><br><br>
+  <footer id="footer-contact" <div class="contact">
+    <h1>Contact Me</h1>
+    <div class="content">
+      <div class="content-form">
+        <form action="" class="form-cont">
+          <div class="col-1">
+            <input type="text" required placeholder="First Name" class="form" /><br /><br />
+            <input type="tel" required placeholder="Phone" class="form" />
           </div>
+          <div class="col-2">
+            <input type="text" required placeholder="Last Name" class="form" /><br /><br />
+            <input type="email" required placeholder="Email Address" class="form" />
+          </div>
+          <div class="col-3">
+            <h4>Level of Study</h4>
+            <input type="checkbox" name="level" value="Junior High" /><label>Junior High</label><br />
+            <input type="checkbox" name="level" value="High School" /><label>High School</label><br />
+            <input type="checkbox" name="level" value="College Application" /><label>College
+              Application</label><br /><br />
+            <input type="submit" value="Send" id="submit-btn" />
+          </div>
+        </form>
+        <br /><br />
+        <div class="col-4">
+          <textarea type="text" name="Message" placeholder="Message.." rows="7" cols="30" required spellcheck="true"
+            class="form"></textarea>
         </div>
       </div>
-      <div class="end">
-        <p>
-          @ 2021 by Somasekhar.
-          <span>
-            <a href="https://somutech.github.io/" target="_blank" style="color: rgb(71, 70, 70)">
-              SomuTech</a>
-          </span>
-        </p>
-      </div>
+    </div>
+    <div class="end">
+      <p>
+        @ 2021 by Somasekhar.
+        <span>
+          <a href="https://somutech.github.io/" target="_blank" style="color: rgb(71, 70, 70)">
+            SomuTech</a>
+        </span>
+      </p>
+    </div>
     </div>
   </footer>
   <!-- footer end -->
+  </div>
 </body>
+
 </html>
